@@ -3,8 +3,6 @@ Adam Blum Official Website
 Created with EAGL
 -->
 <?php session_start(); ?>
-
-
 	<!doctype html>
 	<html lang="en" class="no-js" <?php if ($_SESSION['loggedIn'] == "true") { echo "data-logged-in";} ?>>
 	<head>
