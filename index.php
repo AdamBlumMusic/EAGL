@@ -6,8 +6,9 @@
 	<?php include "includes/navigation.php"; ?>
 <article role="article">
 	<header>
-		<h1>Adam Blum</h1>
-		<h2>Web Designer</h2>
+		<h1>EAGL</h1>
+		<h2>A PHP Framework For Making Websites</h2>
+		<!-- https://github.com/AdamBlumMusic/EAGL -->
 	</header>
 </article>
 <?php include "includes/footer.php"; ?>	
