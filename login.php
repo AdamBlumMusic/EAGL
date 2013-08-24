@@ -6,7 +6,7 @@
 	<?php include "includes/navigation.php"; ?>
 <article>
 	<header>
-		<h1>Login</h1>
+		<h3>Login</h3>
 	</header>
 </article>
 
