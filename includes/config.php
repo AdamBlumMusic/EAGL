@@ -2,7 +2,6 @@
 	
 	/*
 		Configuration File
-
 		** for script and stylesheet resource arrays, remember to omit the file extension **
 	*/
 
