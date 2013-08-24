@@ -1,0 +1,140 @@
+form {
+	max-width:  $paragraph-width * 0.85;
+	margin:  1em auto;
+
+	&[role="form"] {
+		max-width:  100%;
+	}
+}
+
+input {
+	width:  100%;
+
+	&[type="text"],
+	&[type="password"],
+	&[type="email"],
+	&[type="url"],
+	&[type="number"],
+	&[type="tel"] {
+		-webkit-appearance:  none;
+		-moz-appearance:  none;
+		appearance:  none;
+		display:  block;
+		margin-bottom:  1em;
+		padding:   0.5em 1em;
+		background:  $lite;
+		border:  none;
+		border-left:  0.25em solid transparent;
+		// border-bottom:  0.125em solid $gray;
+		font-size:  1em;
+		@extend %bodyfont;
+		@include trans;
+
+		&:focus {
+			border-color:  $blue;
+		}
+
+		&:invalid {
+			border-color:  $red;
+		}
+
+	}
+
+
+}
+
+
+button,
+input[type="submit"],
+input[type="reset"],
+[role="button"] {
+	
+	-webkit-appearance:  none;
+	-moz-appearance:  none;
+	appearance:  none;
+
+	@extend %bodyfont;
+	letter-spacing:  0.125em;
+	background:  none;
+	display:  inline-block;
+	font-size:  1em;
+	//width:  auto;
+	margin:  0 auto;
+	padding:   0.5em 1em;
+	color:  $btnfg;
+	form & {
+		min-width:  6em;
+	}
+	@include trans;
+
+	&:hover, &:focus {
+		color:  $btnfg-hover;
+	}
+}
+
+
+
+
+
+
+label {
+
+	&[rel] {
+		&:after {
+			content:  attr(rel);
+			font-size:  0.85em;
+			margin-left:  0.75em;
+			opacity:  0.5;
+		}
+	}
+
+}
+
+
+legend {
+	margin-bottom:  1em;
+	font-size:  1.25em;
+}
+
+fieldset {
+	margin:  1.5em auto;
+	padding: 0 1.5em 1.5em 1.5em;
+	border-bottom:  $px dashed $gray;
+}
+
+
+textarea {
+	
+	width:  100%;
+	resize:  none;
+	margin:  0 auto;
+		-webkit-appearance:  none;
+		-moz-appearance:  none;
+		appearance:  none;
+		height:  8em;
+		display:  block;
+		margin-bottom:  1em;
+		padding:   0.5em 1em;
+		background:  $lite;
+		border:  none;
+		border-left:  0.25em solid transparent;
+		@include trans;
+		&:focus {
+		border-color:  $blue;
+		}
+		// border-bottom:  0.125em solid $gray;
+		font-size:  1em;
+		@extend %bodyfont;
+}
+
+
+
+
+
+
+
+
+
+
+
+

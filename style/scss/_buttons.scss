@@ -1,0 +1,21 @@
+a[role="button"],
+input[type="submit"],
+input[type="reset"],
+button, %button {
+	font-size:  0.85rem;
+	display:  inline-block;
+	padding:  0.5em 0.75em;
+	margin:  0.25rem 0;
+	border:  none;
+	// border-bottom:  0.25em solid rgba(0,0,0,0.2);
+	background: $lite;
+	text-align:  center;
+
+	text-decoration:  none;
+	@extend %bodyfont;
+
+	color:  $dark;
+	letter-spacing:  0.0625rem;
+	text-transform:  uppercase;
+	cursor:  pointer;
+}

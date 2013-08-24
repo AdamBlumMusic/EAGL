@@ -1,0 +1,84 @@
+table {
+	border:  0.125em solid $lite;
+	margin:  1em auto;
+	width: 100%;
+
+
+}
+
+
+
+
+
+
+	@media screen and (max-width:  $alpha) {
+
+
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr, caption { 
+			display: block; 
+			border:  none !important;
+		}
+		
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+	
+		}
+		
+		tr {
+			&:nth-of-type(odd) {
+				background:  $lite;
+			}
+		}
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			position: relative;
+			padding-left: 50%; 
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+
+
+
+
+
+	}
+
+
+
+
+
+tr {
+	padding:  0.25em;
+}
+
+
+
+td {
+	padding:  0.5em;
+	border-left:  0.125em solid $lite;
+	&:first-child {border-left:  none;}
+}
+
+th {
+	padding:  0.25em;
+	font-size:  1.25em;
+}
+
+
+thead {
+	background:  $lite;
+}
+

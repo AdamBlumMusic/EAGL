@@ -1,0 +1,169 @@
+<!--
+Semantics: ARIA Saves the Day
+August 24 2013
+-->
+
+ <article role='article'><header><h1>Semantics</h1><h2>ARIA Saves the Day</h2><time>August 24 2013</time></header>
+
+ 
+
+
+
+<!--
+<p>
+	Synergy is one of those vague buzzwords businesses love to throw around (it makes their stock photos "pop," you know?). But synergy is a legitimate term that essentially describes when two things are better than just both of them put together. A dictionary can do a better job explaining it than I could though, so here's a definition: 
+</p>
+
+
+
+
+<dl>
+	<dt rel="n">synergy</dt>
+	<dd>the interaction of elements that when combined produce a total effect that is greater than the sum of the individual elements.
+	<cite><a href="http://dictionary.reference.com/browse/synergy" target="_blank">Dictionary.com</a></cite>
+</dd>
+</dl>
+
+-->
+
+
+<p>
+	As web developers, we tend to be overly analytical about how to optimize websites. We want responsive design, we want accessibility, we want semantic markup, we want graceful degredation, blah blah blah. But if we really thought about it, these usability principles have a sizable overlap that we tend to overlook. In other words, truly semantic markup is responsive and degrades gracefully; accessible markup is also semantic.
+</p> 
+
+
+
+<p>
+	As web developers, we tend to be overly analytical about how to optimize websites. We want responsive design, we want accessibility, we want semantic markup, we want graceful degredation, blah blah blah. But if we really thought about it, these usability principles have a sizable overlap that we tend to overlook. In other words, truly semantic markup is responsive and degrades gracefully; accessible markup is also semantic.
+</p> 
+
+<p role="note" rel="references">
+	As web developers, we tend to be overly analytical about how to optimize websites. We want responsive design, we want accessibility, we want semantic markup, we want graceful degredation, blah blah blah. But if we really thought about it, these usability principles have a sizable overlap that we tend to overlook. In other words, truly semantic markup is responsive and degrades gracefully; accessible markup is also semantic.
+</p> 
+
+<!--
+<figure>
+	<img src="img/photo1.jpg" alt="" />
+	<figcaption>This is a figure with a caption. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur.
+		<cite>Granville County Health Department</cite>
+	</figcaption>
+</figure>
+-->
+
+
+<h3>Introduction to Roles</h3>
+	<p>
+		If semantic markup is all about telling the user (or browser) exactly what a feature is meant to be used for, then we should be paying a lot more attention to the <code>role</code> attribute.
+</p>
+
+<p>
+	<ul>
+		<li><abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> Roles are supported by almost all screen readers</li>
+		<li>I said they're cool, so do it</li>
+		<li>Styling becomes more modular</li>
+	</ul>
+</p>
+
+<h3>Coding Practices</h3>
+<p>
+	Roles are seriously the epitome of semantic markup, guys. Have you ever wanted to figure out how to distinguish a button from a link? They are both anchor tags, and that's all that a browser sees, right? We often mark up these differences by using classes, but they all look the same to a screen reader. Roles, however, have an inherent meaning.
+</p>
+
+	<pre>
+	&lt!-- using classes --&gt;
+&lt;a class="button"&gt;I'm a dumb button!&lt;/a&gt;
+&lt;a class="link"&gt;I'm a dumb link!&lt;/a&gt;
+
+	&lt!--  using roles --&gt;
+&lt;a role="button"&gt;I'm an awesome button!&lt;/a&gt;
+&lt;a role="link"&gt;I'm an awesome link!&lt;/a&gt;
+</pre>
+
+
+<p>
+	We can use the attribute selector in CSS to target these for styling, as shown below:
+</p>
+
+
+<pre>
+a[role="button"] {
+	background:  pink;
+}
+
+a[role="link"] {
+	font-family:  "Gotham", sans-serif;
+}
+</pre>
+
+
+
+<p>
+	This is an example of synergy at work; not only do we have accessibility and semantic markup, but we cut down on CSS classes. Maybe this is just a personal preference of mine, but I think classes should be used more for presentational and decorative features, such as colors and fonts, while grids and properties such as <code>display</code> and <code>float</code> should be kept separate.
+</p>
+
+<pre>
+	/* base style */
+a[role="button"] {
+	display: inline-block;
+	padding:  0.5em 0.75em;
+}
+
+	/* presentational features using classes */
+.large-button {
+	background:  #2c90c6;
+	color:  #fff;
+	text-transform:  uppercase;
+	font-family:  "Helvetica Neue Condensed";
+	font-weight:  700;
+}
+</pre>
+
+
+<pre>
+&lt;a role="button" class="large-button"&gt;Large Button!&lt;/a&gt;
+</pre>
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>table header</th>
+      <th>second column</th>
+      <th>third column</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Table cell</td>
+      <td>inside</td>
+      <td>a table row</td>
+    </tr>
+    <tr>
+      <td>Tables</td>
+      <td>can be</td>
+      <td>frustrating.</td>
+    </tr>
+    <tr>
+      <td>Only</td>
+      <td>use when</td>
+      <td>appropriate.</td>
+    </tr>
+  </tbody>
+  <caption>This is a table caption.</caption>
+</table>-->
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit asperiores ipsum placeat maiores temporibus incidunt magni esse molestiae doloribus voluptatum. Porro aliquid odio unde beatae numquam sapiente suscipit incidunt quas.
+</p>
+
+
+<ul role="note" rel="References">
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus labore possimus ut.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ab sunt fuga.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed fuga mollitia optio?</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eos minus velit.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempora vero laboriosam.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio doloribus obcaecati quidem.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et laudantium facere fugit.</li>
+	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, at deleniti placeat!</li>
+</ul> 
+</article>

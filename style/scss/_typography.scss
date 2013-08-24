@@ -1,0 +1,613 @@
+body {
+	@extend %bodyfont;
+	line-height:  $line-height;
+	padding:  0 1.75em;
+	overflow-x:  hidden;
+	font-size:  $font-size;
+	@include css-hyphens(auto); // Ala Trent Walton — http://trentwalton.com/2011/09/07/css-hyphenation
+
+		@media screen and (max-width:  $alpha) {
+			font-size:  $font-size-alt;
+		}
+
+
+
+
+}
+
+
+
+a[role="link"] {
+	@include link;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:  1em auto 0.25em auto;
+	@extend %headingfont;
+	max-width:  $paragraph-width;
+
+	a[role="link"] {
+		color:  $headingcolor;
+		border-color:  $headingcolor;
+	}
+
+		@media screen and (max-width:  $alpha) {
+			padding-left:  1rem;
+			padding-right:  1rem;
+		}
+
+}
+
+h1 {font-size:  4.0625rem;}
+h2 {font-size:  3.25rem;}
+h3 {font-size:  2.5625rem;}
+h4 {font-size:  2rem;}
+h5 {font-size:  1.5625rem;}
+h6 {font-size:  1.25rem;}
+
+
+p {
+	font-size:  1em;
+	@extend %bodyfont;
+	max-width:  $paragraph-width;
+	margin:  1em auto;
+	line-height:  $line-height;
+	text-align:  justify;
+	text-justify:  auto;
+
+	&[role="note"] {
+		font-size:  0.85rem;
+		-moz-column-count: 2; 
+		-moz-column-gap: 1em; 
+//		-moz-column-rule: 1px solid black; 
+		-webkit-column-count: 2; 
+		-webkit-column-gap: 1em; 
+//		-webkit-column-rule: 1px solid black;
+		
+		@media screen and (max-width:  $alpha) {
+			-moz-column-count: 1;
+			-webkit-column-count: 1;
+			max-width:  $paragraph-width * 0.75;
+			margin:  0 auto;
+		}
+
+
+			&[rel]:before {
+				content:  attr(rel);
+				padding-right:  1em;
+				@extend %sans;
+				font-weight:  bold;
+				text-transform:  uppercase;
+				font-size:  0.85em;
+				color:  $gray;
+			}
+	}
+
+		@media screen and (max-width:  $alpha) {
+		//	padding:  1em;
+		}
+
+
+	a {
+		@include link;
+	}
+
+}
+
+
+small {
+	font-size:  0.5em;
+	display:  block;
+}
+
+
+address {
+	@extend %bodyfont;
+}
+
+
+blockquote {
+	max-width:  $paragraph-width * 0.85;
+	margin:  0 auto;
+}
+
+pre {
+	display:  block;
+	max-width:  $paragraph-width;
+	margin:  2em auto;
+	@extend %monofont;
+	background:  $code-bg;
+	color:  white;
+	padding:  3em 2em 1em 1em;
+	position:  relative;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+    word-break: break-all;
+     /* Non standard for webkit */
+    word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+    hyphens: auto;
+
+
+        &:before {
+        	padding:  0.25em 0.25em 0.25em 0.75em;
+        	display:  block;
+        	content: attr(class);
+        	color:  $code-head-color;
+        	font-size:  1em;
+        	position: absolute;
+        	font-weight:  700;
+        	top:  0;
+        	left:  0;
+        	text-transform:  uppercase;
+        	width:  100%;
+        	background:  $code-head-bg;
+        	@extend %sans;
+        }
+
+        &.xml:before {
+        	content:  "html";
+        }
+}
+
+
+
+
+em, strong {
+	color:  $emphasiscolor;
+	text-transform:  uppercase;
+	font-size:  85%;
+
+	@extend %sans;
+	font-weight:  bold;
+}
+
+abbr {
+	border-bottom: $px dotted #222;
+ 	color: #222;
+ 	cursor: help;
+}
+
+
+
+figure {
+	max-width: $paragraph-width;
+	margin:  1em auto;
+}
+
+img {
+	max-width:  100%;
+}
+
+kbd {
+	display:  inline-block;
+	background:  white;
+	padding:  0.5em;
+	border:  0.0625rem solid #eee;
+	border-radius:  0.25rem;
+}
+
+
+code {
+	@extend %monofont;
+	background:  $lite;
+}
+
+var {
+	@extend %monofont;
+}
+
+samp {
+	@extend %monofont;
+}
+
+
+small {
+	font-size:  85%;
+}
+
+q {
+	quotes: "“" "”" "‘" "’";
+	&:before {content: open-quote;}
+	&:after {content: close-quote;}
+}
+
+
+sup, sub {
+	font-size:  75%;
+}
+
+sup {
+	vertical-align:  super;
+}
+
+sub {
+	vertical-align:  sub;
+}
+
+
+
+
+time {
+	display:  block;
+	//color:  $green;
+	max-width:  $paragraph-width;
+	margin:  0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dt, dd, menu, form {
+	max-width: $paragraph-width;
+	margin:  0 auto;
+}
+
+
+ul, ol {
+	max-width: $paragraph-width;
+	margin:  2em auto;
+	//font-size:  90%;
+	padding-left:  2em;
+	padding-right:  2em;
+	text-align:  left;
+	
+		&[role="note"] {
+		font-size:  0.85rem;
+		-moz-column-count: 2; 
+		-moz-column-gap: 1em; 
+//		-moz-column-rule: 1px solid black; 
+		-webkit-column-count: 2; 
+		-webkit-column-gap: 1em; 
+//		-webkit-column-rule: 1px solid black;
+		
+		@media screen and (max-width:  $alpha) {
+			-moz-column-count: 1;
+			-webkit-column-count: 1;
+			max-width:  $paragraph-width * 0.75;
+			margin:  0 auto;
+		}
+
+
+
+
+			&[rel]:before {
+				content:  attr(rel);
+				display:  block;
+				@extend %sans;
+				font-weight:  bold;
+				text-transform:  uppercase;
+				font-size:  0.85em;
+				color:  $gray;
+			}
+	}
+
+
+}
+
+li {
+	margin-bottom:  0.5em;
+}
+
+
+
+
+
+
+
+dl {
+
+
+
+
+	max-width:  $paragraph-width;
+	margin:  1em auto;
+	padding: 1em 2em;
+	background:  $lite;
+	position: relative;
+//	border-top:  0.25em solid $definitiontermcolor;
+
+
+	dt {
+		font-size:  1.75rem;
+		
+		color:  $definitiontermcolor;
+		position: relative;
+		&[rel]:after {
+			font-size:  80%;
+			content: attr(rel);
+			color:  $dark;
+			opacity:  0.5;
+			padding-left:  0.5em;
+		}
+
+	}
+
+
+	dd {
+		margin-bottom:  1em;
+	}
+
+}
+
+
+
+cite {
+	&:before {content:  "Source: ";}
+	@extend %sans;
+	color:  $gray;
+	display:  block;
+	clear:  both;
+	font-size:  65%;
+	text-align:  right;
+	a {@include link;}
+}
+
+
+
+
+a[rel="top"] {
+	display:  inline-block;
+	max-width:  $paragraph-width;
+	margin:  0 auto;
+	&:before {
+		content:  "↑";
+	}
+
+	&:after {
+		content:  " Top";
+	}
+}
+
+a[rel="back"] {
+	
+	text-decoration:  none;
+	color:  $dark;
+	border:  none;
+	@include trans;
+	&:hover {
+		border:  none;
+		color:  $red;
+	}
+
+	&:before {
+		padding-right:  1em;
+	}
+}
+
+
+
+
+
+
+progress {  
+    display:  block;
+    margin:  0.5em auto;
+    background:  #fff;
+    border:  1px solid $blue;
+    height:  1rem;
+    width:  80%;
+    &:after {
+     content:  attr(value);
+      display:  block;
+    }
+}  
+progress::-webkit-progress-bar {  
+    background:  #fff;
+    border:  1px solid $blue;
+}  
+progress::-webkit-progress-value {  
+background:  $blue;
+}  
+progress::-moz-progress-bar {  
+background:  white;
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+::selection {
+	background: $texthighlightcolor; /* Safari */
+	}
+::-moz-selection {
+	background: $texthighlightcolor; /* Firefox */
+}
+
+
+
+
+
+pre::selection {
+	background: $codetexthighlightcolor;
+	}
+pre::-moz-selection {
+	background: $codetexthighlightcolor; 
+}
+
+pre span::selection {
+	background: $codetexthighlightcolor;
+	}
+pre span::-moz-selection {
+	background: $codetexthighlightcolor; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[contenteditable] {
+	background:  $lite;
+	max-width:  $paragraph-width;
+	margin:  1em auto;
+	min-height:  15em;
+	padding:  0.5em 1em;
+
+
+
+
+
+
+
+
+/*
+	contenteditable div
+*/
+
+
+	 pre {
+	 	background:  white;
+	 	border:  $px dashed $green;
+	 }
+
+
+	p {
+		border-left:  $px solid $gray;
+		padding-left:  0.5em;
+		margin:  0;
+		&:before {
+			content:  "¶";
+			color:  $gray;
+			margin-right:  0.25em;
+		}
+	}
+
+	b {
+		&:before, &:after {content: "**"; color:  $gray;}
+	}
+
+	em, i {
+		&:before, &:after {content: "*"; color:  $gray;}
+	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+		margin:  0;
+		line-height:  1;
+
+		&:before {
+			padding-right: 0.5em;
+			color:  $gray;
+			font-size:  1rem;
+		}
+	}
+
+	h1 {font-size:  2.5rem;}
+	h2 {font-size:  2.25rem;}
+	h3 {font-size:  2rem;}
+	h4 {font-size:  1.75rem;}
+	h5 {font-size:  1.5rem;}
+	h6 {font-size:  1.25rem;}
+
+
+	h1:before {content:  "h1";}
+	h2:before {content:  "h2";}
+	h3:before {content:  "h3";}
+	h4:before {content:  "h4";}
+	h5:before {content:  "h5";}
+	h6:before {content:  "h6";}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+nav[role="toolbar"] {
+	display:  block;
+	background:  $lite;
+	padding:  0.125em 0.5em;
+		a[role="button"] {
+			padding:  0.5em;
+			min-width:  2.5em;
+			margin:  0;
+			width:  auto;
+			text-align:  center;
+		}
+}
+
+
+[data-hide] {
+	display:  none;
+}
+
+
+
+[role="alert"] {
+	background:  $lite;
+	max-width:  $paragraph-width;
+	margin:  1em auto;
+	padding:  0.5em 1em;
+	h4 {
+		margin-top:  0;
+		margin-bottom:  0;
+	}
+}
+
+
+
+[role="group"] {
+	max-width:  $paragraph-width;
+	margin:  0 auto;
+
+}
+
+nav[role="group"] {background: $lite;}
+
+
+[data-logged-in] {
+
+
+
+}
+

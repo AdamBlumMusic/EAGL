@@ -1,0 +1,64 @@
+<!--
+Form Elements: Awesome Stuff
+August 24 2013
+-->
+
+ <article role='article'><header><h1>Form Elements</h1><h2>Awesome Stuff</h2><time>August 24 2013</time></header>
+
+ 
+
+
+	<p>Useful form stuff that looks awesome.</p>
+
+
+	<form action="#" method="post" role="form">
+
+	<section role="grid">
+		<fieldset role="gridcell">
+			<legend>Basic Information</legend>
+			<label for="firstname">First Name</label>
+			<input type="text" placeholder="First Name" name="firstname"  id="firstname" />
+
+			<label for="lastname">Last Name</label>
+			<input type="text" placeholder="Last Name" name="lastname" id="lastname" />
+
+			<label for="email" rel="no spam, I promise">Email Address</label>
+			<input type="email" placeholder="email@example.com" name="email" id="email" />
+
+			<label for="website">Website</label>
+			<input type="url" placeholder="www.example.com" name="website" id="website" />
+
+			<label for="notes">Notes</label>
+			<textarea name="notes" id="notes"></textarea>
+		</fieldset>
+
+
+		<fieldset role="gridcell">
+			<legend>Billing Information</legend>
+			<label for="street">Street</label>
+			<input type="text" placeholder="Street" name="street"  id="street" />
+
+			<label for="city">City</label>
+			<input type="text" placeholder="City" name="city" id="city" />
+			
+			<label for="state">State</label>
+			<input type="text" placeholder="State" name="state" id="state" />
+
+			<label for="zipcode">ZIP Code</label>
+			<input type="text" pattern="(\d{5}([\-]\d{4})?)
+" placeholder="ZIP Code" name="zipcode" id="zipcode" />
+
+			<label for="comments">Comments</label>
+			<textarea name="comments" id="comments"></textarea>
+		</fieldset>
+</section>
+
+
+
+
+<input type="submit" value="Send Form" />
+
+
+		
+	</form> 
+</article>
