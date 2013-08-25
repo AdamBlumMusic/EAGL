@@ -28,7 +28,7 @@
 
 	<figure>
 		<img src="img/screenshots/cms_edit.png" alt="">
-		<figcaption>Example of the EAGL WYSIWYG Editor <cite>Adam Blum</cite></figcaption>
+		<figcaption>Example of the EAGL post editor <cite>Adam Blum</cite></figcaption>
 	</figure>
 
 	<h3>Admin Dashboard</h3>
