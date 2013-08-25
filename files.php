@@ -12,8 +12,9 @@
 <h2>Common Files</h2>
 <article role="group">
 	<nav role="toolbar">
-		<a href="page_editor.php?post=includes/config.php" role="button">config</a>
-		<a href="page_editor.php?post=includes/functions.php" role="button">functions</a>
+		<a href="page_editor.php?post=_eagl/config.php" role="button">config</a>
+		<a href="page_editor.php?post=_eagl/functions.php" role="button">functions</a>
+		<a href="page_editor.php?post=_eagl/core.php" role="button">core</a>
 		<a href="page_editor.php?post=.htaccess" role="button">htaccess</a>
 		<a href="page_editor.php?post=includes/inlinescripts.php" role="button">inline scripts</a>
 	</nav>

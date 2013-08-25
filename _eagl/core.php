@@ -1,4 +1,8 @@
 <?php
+/*
+  EAGL
+  Core
+*/
 
 include "_eagl/config.php";
 
