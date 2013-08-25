@@ -9,6 +9,8 @@
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
 
+	$eagl_plugins = "global";
+
 	/*
 		Metadata
 	*/
@@ -28,4 +30,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>																
+?>																		

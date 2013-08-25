@@ -30,7 +30,7 @@
 </article>
 
 
-
+<p><?php echo $plugintest; ?> blah blah</p>
 
 <article role="group">
 		<h3>Pages</h3>

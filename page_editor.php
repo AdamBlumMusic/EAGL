@@ -10,6 +10,11 @@
 	$post = $_GET['post'];
 	$thepagecontent = file_get_contents("$post");
 	$myFile = $post;
+
+	if ($myFile == "_eagl/core.php") {
+		eagl_alert("Hey!", "You're viewing Core. Please make sure you know what you're doing if you're editing this! Really it shouldn't need editing, but if you absolutely have to, do so carefully.");
+	}
+
  ?>
 
 <?php

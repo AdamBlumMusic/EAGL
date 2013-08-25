@@ -731,138 +731,6 @@ a[rel="back"] {
   a[rel="back"]:before {
     padding-right: 1em; }
 
-progress {
-  display: block;
-  margin: 0.5em auto;
-  background: #fff;
-  border: 1px solid #2c90c6;
-  height: 1rem;
-  width: 80%; }
-  progress:after {
-    content: attr(value);
-    display: block; }
-
-progress::-webkit-progress-bar {
-  background: #fff;
-  border: 1px solid #2c90c6; }
-
-progress::-webkit-progress-value {
-  background: #2c90c6; }
-
-progress::-moz-progress-bar {
-  background: white; }
-
-::selection {
-  background: rgba(205, 205, 255, 0.2);
-  /* Safari */ }
-
-::-moz-selection {
-  background: rgba(205, 205, 255, 0.2);
-  /* Firefox */ }
-
-pre::selection {
-  background: rgba(255, 255, 255, 0.25); }
-
-pre::-moz-selection {
-  background: rgba(255, 255, 255, 0.25); }
-
-pre span::selection {
-  background: rgba(255, 255, 255, 0.25); }
-
-pre span::-moz-selection {
-  background: rgba(255, 255, 255, 0.25); }
-
-[contenteditable] {
-  background: #f6f6f6;
-  max-width: 50rem;
-  margin: 1em auto;
-  min-height: 15em;
-  padding: 0.5em 1em;
-  /*
-  	contenteditable div
-  */ }
-  [contenteditable] pre {
-    background: white;
-    border: 0.0625rem dashed #5bc8a4; }
-  [contenteditable] p {
-    border-left: 0.0625rem solid #cccccc;
-    padding-left: 0.5em;
-    margin: 0; }
-    [contenteditable] p:before {
-      content: "¶";
-      color: #cccccc;
-      margin-right: 0.25em; }
-  [contenteditable] b:before, [contenteditable] b:after {
-    content: "**";
-    color: #cccccc; }
-  [contenteditable] em:before, [contenteditable] em:after, [contenteditable] i:before, [contenteditable] i:after {
-    content: "*";
-    color: #cccccc; }
-  [contenteditable] h1, [contenteditable] h2, [contenteditable] h3, [contenteditable] h4, [contenteditable] h5, [contenteditable] h6 {
-    margin: 0;
-    line-height: 1; }
-    [contenteditable] h1:before, [contenteditable] h2:before, [contenteditable] h3:before, [contenteditable] h4:before, [contenteditable] h5:before, [contenteditable] h6:before {
-      padding-right: 0.5em;
-      color: #cccccc;
-      font-size: 1rem; }
-  [contenteditable] h1 {
-    font-size: 2.5rem; }
-  [contenteditable] h2 {
-    font-size: 2.25rem; }
-  [contenteditable] h3 {
-    font-size: 2rem; }
-  [contenteditable] h4 {
-    font-size: 1.75rem; }
-  [contenteditable] h5 {
-    font-size: 1.5rem; }
-  [contenteditable] h6 {
-    font-size: 1.25rem; }
-  [contenteditable] h1:before {
-    content: "h1"; }
-  [contenteditable] h2:before {
-    content: "h2"; }
-  [contenteditable] h3:before {
-    content: "h3"; }
-  [contenteditable] h4:before {
-    content: "h4"; }
-  [contenteditable] h5:before {
-    content: "h5"; }
-  [contenteditable] h6:before {
-    content: "h6"; }
-
-nav[role="toolbar"] {
-  display: block;
-  background: #f6f6f6;
-  padding: 0.125em 0.5em; }
-  nav[role="toolbar"] a[role="button"] {
-    padding: 0.5em;
-    min-width: 2.5em;
-    margin: 0;
-    width: auto;
-    text-align: center; }
-
-[data-hide] {
-  display: none; }
-
-[role="alert"] {
-  background: #f6f6f6;
-  max-width: 50rem;
-  margin: 1em auto;
-  padding: 0.5em 1em; }
-  [role="alert"] h4 {
-    margin-top: 0;
-    margin-bottom: 0; }
-
-[role="group"] {
-  max-width: 50rem;
-  margin: 0 auto; }
-
-nav[role="group"] {
-  background: #f6f6f6; }
-
-[data-logged-in] .large {
-  min-height: 20em; }
-
 body > header nav[role="navigation"] {
   max-width: 50rem;
   margin: 1em auto;
@@ -1395,3 +1263,135 @@ pre .xml .vbscript,
 pre .xml .css,
 pre .xml .cdata {
   opacity: 0.5; }
+
+progress {
+  display: block;
+  margin: 0.5em auto;
+  background: #fff;
+  border: 1px solid #2c90c6;
+  height: 1rem;
+  width: 80%; }
+  progress:after {
+    content: attr(value);
+    display: block; }
+
+progress::-webkit-progress-bar {
+  background: #fff;
+  border: 1px solid #2c90c6; }
+
+progress::-webkit-progress-value {
+  background: #2c90c6; }
+
+progress::-moz-progress-bar {
+  background: white; }
+
+::selection {
+  background: rgba(205, 205, 255, 0.2);
+  /* Safari */ }
+
+::-moz-selection {
+  background: rgba(205, 205, 255, 0.2);
+  /* Firefox */ }
+
+pre::selection {
+  background: rgba(255, 255, 255, 0.25); }
+
+pre::-moz-selection {
+  background: rgba(255, 255, 255, 0.25); }
+
+pre span::selection {
+  background: rgba(255, 255, 255, 0.25); }
+
+pre span::-moz-selection {
+  background: rgba(255, 255, 255, 0.25); }
+
+[contenteditable] {
+  background: #f6f6f6;
+  max-width: 50rem;
+  margin: 1em auto;
+  min-height: 15em;
+  padding: 0.5em 1em;
+  /*
+  	contenteditable div
+  */ }
+  [contenteditable] pre {
+    background: white;
+    border: 0.0625rem dashed #5bc8a4; }
+  [contenteditable] p {
+    border-left: 0.0625rem solid #cccccc;
+    padding-left: 0.5em;
+    margin: 0; }
+    [contenteditable] p:before {
+      content: "¶";
+      color: #cccccc;
+      margin-right: 0.25em; }
+  [contenteditable] b:before, [contenteditable] b:after {
+    content: "**";
+    color: #cccccc; }
+  [contenteditable] em:before, [contenteditable] em:after, [contenteditable] i:before, [contenteditable] i:after {
+    content: "*";
+    color: #cccccc; }
+  [contenteditable] h1, [contenteditable] h2, [contenteditable] h3, [contenteditable] h4, [contenteditable] h5, [contenteditable] h6 {
+    margin: 0;
+    line-height: 1; }
+    [contenteditable] h1:before, [contenteditable] h2:before, [contenteditable] h3:before, [contenteditable] h4:before, [contenteditable] h5:before, [contenteditable] h6:before {
+      padding-right: 0.5em;
+      color: #cccccc;
+      font-size: 1rem; }
+  [contenteditable] h1 {
+    font-size: 2.5rem; }
+  [contenteditable] h2 {
+    font-size: 2.25rem; }
+  [contenteditable] h3 {
+    font-size: 2rem; }
+  [contenteditable] h4 {
+    font-size: 1.75rem; }
+  [contenteditable] h5 {
+    font-size: 1.5rem; }
+  [contenteditable] h6 {
+    font-size: 1.25rem; }
+  [contenteditable] h1:before {
+    content: "h1"; }
+  [contenteditable] h2:before {
+    content: "h2"; }
+  [contenteditable] h3:before {
+    content: "h3"; }
+  [contenteditable] h4:before {
+    content: "h4"; }
+  [contenteditable] h5:before {
+    content: "h5"; }
+  [contenteditable] h6:before {
+    content: "h6"; }
+
+nav[role="toolbar"] {
+  display: block;
+  background: #f6f6f6;
+  padding: 0.125em 0.5em; }
+  nav[role="toolbar"] a[role="button"] {
+    padding: 0.5em;
+    min-width: 2.5em;
+    margin: 0;
+    width: auto;
+    text-align: center; }
+
+[data-hide] {
+  display: none; }
+
+[role="alert"] {
+  background: #f6f6f6;
+  max-width: 50rem;
+  margin: 1em auto;
+  padding: 0.5em 1em; }
+  [role="alert"] h4 {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+[role="group"] {
+  max-width: 50rem;
+  margin: 0 auto; }
+
+nav[role="group"] {
+  background: #f6f6f6; }
+
+[data-logged-in] .large {
+  min-height: 20em; }
