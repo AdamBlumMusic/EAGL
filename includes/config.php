@@ -5,7 +5,7 @@
 		** for script and stylesheet resource arrays, remember to omit the file extension **
 	*/
 
-	$eagl_scripts = "jquery, highlight, fittext, modernizr, global"; // the names of scripts to load
+	$eagl_scripts = "jquery, highlight, fittext, modernizr, global";
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
 
@@ -28,4 +28,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>						
+?>											

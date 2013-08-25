@@ -97,15 +97,43 @@ function eagl_generatePagelist() {
     if ($handle = opendir('./')) {
         while (false !== ($entry = readdir($handle))) {
             if ($entry != "." && $entry != ".." && $entry != ".htaccess.conf" && $entry != ".git" && $entry != ".gitignore" && $entry != ".DS_Store") {
-              $lines = file("blog/$entry");
-        $title = $lines[1];
-        $thedate = $lines[2];
                 echo "<a href='page_editor.php?post=$entry' role='button'>$entry</a>\n";
             }
         }
         closedir($handle);
    }
 }
+
+
+
+
+
+
+
+
+function eagl_generateFilelist($dir) {
+    if ($handle = opendir("$dir")) {
+        while (false !== ($entry = readdir($handle))) {
+            if ($entry != "." && $entry != ".." && $entry != ".htaccess.conf" && $entry != ".git" && $entry != ".gitignore" && $entry != ".DS_Store") {
+
+                echo "<a href='page_editor.php?post=$dir$entry' role='button'>$entry</a>\n";
+            }
+        }
+        closedir($handle);
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

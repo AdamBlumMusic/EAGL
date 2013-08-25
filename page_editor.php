@@ -23,10 +23,12 @@ if (isset($_POST['page_content'])) {
 			fputs($fh, $stringData);
 			fclose($fh);
 			eagl_alert("Success", "Your page, $post, was saved!");
+			echo "<p><a href='files.php' rel='back' data-icon='arroww' role='button'>View Changes</a></p>";
+		} else {
+			echo "<p><a href='files.php' rel='back' data-icon='arroww'>Go back</a></p>";
 		}
 ?>
 
-<p><a href="configuration.php" rel="back" data-icon="arroww">View All Files</a></p>
 
 <form action="#" method="post">
 	<textarea name="page_content" id="page_content" class="large">
