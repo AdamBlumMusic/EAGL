@@ -14,7 +14,6 @@
 
 	<p>EAGL is a fully-functional blogging platform in PHP.</p>
 
-	
 	<h3>Config.php Features</h3>
 	<p>EAGL uses a <code>config.php</code> file to manage assets and metadata. More specifically:</p>
 		<ul>
