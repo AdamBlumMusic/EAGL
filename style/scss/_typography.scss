@@ -607,7 +607,9 @@ nav[role="group"] {background: $lite;}
 
 [data-logged-in] {
 
-
+	.large {
+		min-height:  20em;
+	}
 
 }
 

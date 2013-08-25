@@ -1,6 +1,6 @@
 <?php
 
-include "includes/config.txt";
+include "includes/config.php";
 
 $eagl_thispage = basename($_SERVER['PHP_SELF']);
 
@@ -88,6 +88,36 @@ function eagl_generateBloglist() {
    }
 }
 
+
+
+
+
+
+function eagl_generatePagelist() {
+    if ($handle = opendir('./')) {
+        while (false !== ($entry = readdir($handle))) {
+            if ($entry != "." && $entry != ".." && $entry != ".htaccess.conf" && $entry != ".git" && $entry != ".gitignore" && $entry != ".DS_Store") {
+              $lines = file("blog/$entry");
+        $title = $lines[1];
+        $thedate = $lines[2];
+                echo "<a href='page_editor.php?post=$entry' role='button'>$entry</a>\n";
+            }
+        }
+        closedir($handle);
+   }
+}
+
+
+
+
+function eagl_generatePageEdit() {
+
+}
+
+
+
+
+
 function eagl_generateBlogpost() {
   $post = $_GET['post'];
   echo file_get_contents("blog/$post");
@@ -140,6 +170,13 @@ function eagl_loginFailure() {
   echo $passAttemptHashed;
   echo $passAttemptNoHash;
 }
+
+
+
+
+
+
+
 
 if ($eagl_scripts !== "" && $eagl_stylesheets !== "" && $eagl_legacystylesheet !== "" && $eagl_nostyles == "false" && $eagl_developerInfo == "false") {
   $eagl_productionReady = "true";

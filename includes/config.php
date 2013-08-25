@@ -28,4 +28,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>
+?>						

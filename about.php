@@ -44,4 +44,4 @@ Adam Blum Official Website
 </article>
 <?php include "includes/footer.php"; ?>
 </body>
-</html>
+</html>	

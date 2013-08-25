@@ -11,7 +11,7 @@
 	</header>
 </article>
 
-
+<?php eagl_wip(); ?>
 
 <?php include "includes/footer.php"; ?>
 </body>

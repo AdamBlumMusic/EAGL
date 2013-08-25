@@ -1,4 +1,4 @@
-<?php include "includes/head.php"; ?>
+				<?php include "includes/head.php"; ?>
 	<title>Adam Blum</title>
 </head>
 <body>
@@ -13,4 +13,4 @@
 </article>
 <?php include "includes/footer.php"; ?>	
 </body>
-</html>
+</html>		

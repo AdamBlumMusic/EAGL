@@ -860,6 +860,9 @@ nav[role="toolbar"] {
 nav[role="group"] {
   background: #f6f6f6; }
 
+[data-logged-in] .large {
+  min-height: 20em; }
+
 body > header nav[role="navigation"] {
   max-width: 50rem;
   margin: 1em auto;
