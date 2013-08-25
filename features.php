@@ -6,13 +6,13 @@
 <?php include "includes/navigation.php"; ?>
 
 
-<article>
+<article role="article">
 	<header>
 		<h1>Features</h1>
+		<h2>Fun Stuff</h2>
 	</header>
 
-	<h2>CSS</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, dignissimos laborum ratione quod sequi repellat repellendus eligendi dolorem perferendis quisquam est modi eveniet blanditiis molestias non? Quam, facere recusandae quod.</p>
+	<p>EAGL is a fully-functional blogging platform in PHP.</p>
 
 	<h3>Typography</h3>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, iure, debitis distinctio amet dolorum libero optio officia quis animi voluptates corrupti ad sint laudantium cupiditate laboriosam aut deleniti quod repellendus.</p>
