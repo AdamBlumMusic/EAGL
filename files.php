@@ -38,6 +38,11 @@
 
 
 <article role="group">
+		<h3>Core</h3>
+		<?php eagl_generateFilelist("_eagl/") ; ?>
+</article>
+
+<article role="group">
 		<h3>Blog Posts</h3>
 		<?php eagl_generateFilelist("blog/") ; ?>
 </article>
