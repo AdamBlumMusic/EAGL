@@ -26,7 +26,7 @@ Adam Blum Official Website
 <section role="grid">
 		<section><img src="img/AdamBlumSquare.jpg" alt="" /></section>
 		<section>
-		<p>I am a <?php echo $age; ?> year old web designer and developer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quis, fuga placeat in cum aut iure atque minima dicta consequatur earum sapiente eos ipsum odit hic recusandae excepturi possimus beatae.</p>
+		<p>I am a <?php echo $eagl_age; ?> year old web designer and developer. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quis, fuga placeat in cum aut iure atque minima dicta consequatur earum sapiente eos ipsum odit hic recusandae excepturi possimus beatae.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, neque quasi consequatur veniam omnis impedit quod nihil soluta sit iure porro earum cupiditate. A ipsa doloremque eos consequuntur id obcaecati.</p>
 		</section>
 </section>

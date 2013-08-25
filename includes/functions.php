@@ -48,9 +48,9 @@ function eagl_createSlug($string){
 
 
 
-$birthDate = explode("/", $birthDate);
+$eagl_birthDate = explode("/", $eagl_birthDate);
 //get age from date or birthdate
-$age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md") ? ((date("Y")-$birthDate[2])-1):(date("Y")-$birthDate[2]));
+$eagl_age = (date("md", date("U", mktime(0, 0, 0, $eagl_birthDate[0], $eagl_birthDate[1], $eagl_birthDate[2]))) > date("md") ? ((date("Y")-$eagl_birthDate[2])-1):(date("Y")-$eagl_birthDate[2]));
 
 
 
@@ -106,9 +106,9 @@ function eagl_alert($title, $message) {
   echo "<div role='alert'><h4>$title</h4><p>$message</p></div>";
 }
 
-$eagl_user = "adamblum";
+$eagl_user = "admin";
 
-$eagl_pass = hash('whirlpool', '9274107abM');
+$eagl_pass = hash('whirlpool', 'thepassword');
 
 $eagl_today = date("F j Y");
 
