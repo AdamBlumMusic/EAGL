@@ -8,3 +8,4 @@ EAGL — pronounced “eagle” — is built with pure PHP, and includes a `conf
 - `config.php` file to easily load stylesheets and javascript
 - specify a legacy stylesheet just for older browsers
 - includes simple, secure admin area
+- "files" area where you can edit any file from the server
