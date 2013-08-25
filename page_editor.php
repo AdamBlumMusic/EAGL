@@ -4,6 +4,7 @@
 <body>
 <?php include "includes/legacy.php"; ?>
 <?php include "includes/navigation.php"; ?>
+<?php eagl_secure(); ?>
 
 <?php 
 	$post = $_GET['post'];

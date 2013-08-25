@@ -13,16 +13,22 @@
 <article role="group">
 	<nav role="toolbar">
 		<a href="page_editor.php?post=includes/config.php" role="button">config</a>
-
 		<a href="page_editor.php?post=includes/functions.php" role="button">functions</a>
-
 		<a href="page_editor.php?post=.htaccess" role="button">htaccess</a>
-
 		<a href="page_editor.php?post=includes/inlinescripts.php" role="button">inline scripts</a>
+	</nav>
 
-</nav>
-	
+	<nav role="toolbar">
+		
+		<a href="page_editor.php?post=style/scss/_variables.scss" role="button">Sass&nbsp;Variables</a>
+		<a href="page_editor.php?post=style/scss/_typography.scss" role="button">Sass&nbsp;Typography</a>
+	</nav>
 
+	<nav role="toolbar">
+		
+		<a href="page_editor.php?post=scripts/global.js" role="button">global.js</a>
+		<a href="page_editor.php?post=style/scss/_typography.scss" role="button">Sass&nbsp;Typography</a>
+	</nav>
 </article>
 
 

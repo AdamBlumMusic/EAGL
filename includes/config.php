@@ -18,8 +18,8 @@
 	$eagl_author = "$eagl_firstName $eagl_lastName";
 	$eagl_admin = "$eagl_author";
 
-	$eagl_eagl_birthDate = "1/2/1776";
-	$eagl_eagl_adminEmail = "adamblum@adamblummusic.com";
+	$eagl_birthDate = "10/20/1995";
+	$eagl_adminEmail = "adamblum@adamblummusic.com";
 
 
 	/*
@@ -28,4 +28,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>											
+?>															
