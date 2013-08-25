@@ -37,6 +37,7 @@ reset($eagl_stylesarray);
 
 echo "\t<!--[if lte IE 6]>\n\t\t<link rel='stylesheet' href='style/css/$eagl_legacystylesheet.css' />\n\t<![endif]-->\n";
 echo "<style> nav a[href='$eagl_thispage'] {color:  #eb5448;} </style>\n";
+echo "<style> nav[role='navigation'] a[href='$eagl_thispage'] {color:  #eb5448;} </style>\n";
 
 function eagl_createSlug($string){
   $slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
