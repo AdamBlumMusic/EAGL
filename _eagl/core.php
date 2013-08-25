@@ -1,6 +1,6 @@
 <?php
 
-include "includes/config.php";
+include "_eagl/config.php";
 
 $eagl_thispage = basename($_SERVER['PHP_SELF']);
 
