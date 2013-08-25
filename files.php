@@ -24,8 +24,7 @@
 	</nav>
 
 	<nav role="toolbar">
-		<a href="page_editor.php?post=scripts/global.js" role="button">global.js</a>
-		
+		<a href="page_editor.php?post=scripts/global.js" role="button">global.js</a>		
 	</nav>
 </article>
 

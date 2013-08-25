@@ -2,7 +2,7 @@
 	
 	/*
 		Configuration File
-		** for script and stylesheet resource arrays, remember to omit the file extension **
+		** for script and stylesheet resources, remember to omit the file extension **
 	*/
 
 	$eagl_scripts = "jquery, highlight, fittext, modernizr, global";
@@ -28,4 +28,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>															
+?>																
