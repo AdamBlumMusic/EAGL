@@ -5,24 +5,45 @@
 	<?php include "includes/legacy.php"; ?>
 	<?php include "includes/navigation.php"; ?>
 	<?php eagl_secure(); ?>
-<article role="group">
 
-	<a href="page_editor.php?post=includes/config.php" data-icon="code" role="button"> Edit Configuration File</a>
-	<p role="note" rel="about config">This is the config.php file, and it's awesome.</p>
+	<h1>Files</h1>
+	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone!</p>
+
+<h2>Common Files</h2>
+<article role="group">
+	<nav role="toolbar">
+		<a href="page_editor.php?post=includes/config.php" role="button">config</a>
+
+		<a href="page_editor.php?post=includes/functions.php" role="button">functions</a>
+
+		<a href="page_editor.php?post=.htaccess" role="button">htaccess</a>
+
+		<a href="page_editor.php?post=includes/inlinescripts.php" role="button">inline scripts</a>
+
+</nav>
+	
+
 </article>
 
 
 
-<h3>Pages</h3>
+
 <article role="group">
-	<?php  eagl_generateFilelist("./") ; ?>
+		<h3>Pages</h3>
+		<?php eagl_generateFilelist("./") ; ?>
 </article>
 
+
+<article role="group">
+		<h3>Blog Posts</h3>
+		<?php eagl_generateFilelist("blog/") ; ?>
+</article>
 
 
 <article role="grid">
 	<section role="gridcell">
 		<h3>Includes</h3>
+		<p></p>
 		<?php eagl_generateFilelist("includes/"); ?>
 	</section>
 
