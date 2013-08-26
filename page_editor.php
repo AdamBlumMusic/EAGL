@@ -16,19 +16,23 @@
 	}
 
  ?>
+<h4>Editing <?php echo $myFile; ?></h4>
+<p><?php eagl_getLinecount("$post"); ?> lines, <?php echo eagl_getFilesize($myFile); ?></p>
+
+
 
 <?php
 if (isset($_POST['page_content'])) {
 	$page_content = $_POST['page_content'];
 
-	$ourFileHandle = fopen("$myFile", 'wb') or die("can't open filea");
+	$ourFileHandle = fopen("$myFile", 'wb') or die("<p>Error: Cannot open file <code>$myFile</code>.</p>");
 	fclose($ourFileHandle);
 
-	$fh = fopen($myFile, 'w') or die("can't open fileee");
+	$fh = fopen($myFile, 'w') or die("<p>Error: Cannot write file <code>$myFile</code>.</p>");
 			$stringData = "$page_content";
 			fputs($fh, $stringData);
 			fclose($fh);
-			eagl_alert("Success", "Your page, $post, was saved!");
+			eagl_alert("Success", "Your page, <code>$post</code>, was saved!");
 			echo "<p><a href='files.php' rel='back' data-icon='arroww' role='button'>View Changes</a></p>";
 		} else {
 			echo "<p><a href='files.php' rel='back' data-icon='arroww'>Go back</a></p>";

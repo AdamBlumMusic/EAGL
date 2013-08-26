@@ -26,7 +26,9 @@
 		<dt>Production Ready?</dt>
 		<dd><?php echo $eagl_productionReady; ?></dd>
 	</dl>
-		<section role="group"><p>Wanna fix something?</p><a href="page_editor.php?post=_eagl/config.php" role="button">Edit your config file</a></section>
+		<section role="group">
+			<h4>Wanna fix something? <a href="page_editor.php?post=_eagl/config.php" role="link">Edit your config file</a></h4>
+		</section>
 
 </article>
 	<?php include "includes/footer.php"; ?>

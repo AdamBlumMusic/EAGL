@@ -1395,3 +1395,6 @@ nav[role="group"] {
 
 [data-logged-in] .large {
   min-height: 20em; }
+
+[data-fade] {
+  opacity: 0.5; }

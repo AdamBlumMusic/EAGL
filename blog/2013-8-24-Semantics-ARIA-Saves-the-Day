@@ -2,20 +2,11 @@
 Semantics: ARIA Saves the Day
 August 24 2013
 -->
-
  <article role='article'><header><h1>Semantics</h1><h2>ARIA Saves the Day</h2><time>August 24 2013</time></header>
-
- 
-
-
-
 <!--
 <p>
 	Synergy is one of those vague buzzwords businesses love to throw around (it makes their stock photos "pop," you know?). But synergy is a legitimate term that essentially describes when two things are better than just both of them put together. A dictionary can do a better job explaining it than I could though, so here's a definition: 
 </p>
-
-
-
 
 <dl>
 	<dt rel="n">synergy</dt>
@@ -23,9 +14,7 @@ August 24 2013
 	<cite><a href="http://dictionary.reference.com/browse/synergy" target="_blank">Dictionary.com</a></cite>
 </dd>
 </dl>
-
 -->
-
 
 <p>
 	As web developers, we tend to be overly analytical about how to optimize websites. We want responsive design, we want accessibility, we want semantic markup, we want graceful degredation, blah blah blah. But if we really thought about it, these usability principles have a sizable overlap that we tend to overlook. In other words, truly semantic markup is responsive and degrades gracefully; accessible markup is also semantic.
@@ -70,13 +59,13 @@ August 24 2013
 </p>
 
 	<pre>
-	&lt!-- using classes --&gt;
-&lt;a class="button"&gt;I'm a dumb button!&lt;/a&gt;
-&lt;a class="link"&gt;I'm a dumb link!&lt;/a&gt;
+	<!-- using classes -->
+<a class="button">I'm a dumb button!</a>
+<a class="link">I'm a dumb link!</a>
 
-	&lt!--  using roles --&gt;
-&lt;a role="button"&gt;I'm an awesome button!&lt;/a&gt;
-&lt;a role="link"&gt;I'm an awesome link!&lt;/a&gt;
+	<!--  using roles -->
+<a role="button">I'm an awesome button!</a>
+<a role="link">I'm an awesome link!</a>
 </pre>
 
 
@@ -120,7 +109,7 @@ a[role="button"] {
 
 
 <pre>
-&lt;a role="button" class="large-button"&gt;Large Button!&lt;/a&gt;
+<a role="button" class="large-button">Large Button!</a>
 </pre>
 <!--
 <table>

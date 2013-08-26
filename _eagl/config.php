@@ -9,6 +9,11 @@
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
 
+	$eagl_version = "1.0";
+
+	$eagl_adminUsername = "admin";
+	$eagl_adminPassword = "thepassword";
+
 	/*
 		Metadata
 	*/
