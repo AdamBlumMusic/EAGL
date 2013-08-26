@@ -51,6 +51,7 @@
 
 	<h3>Custom Plugins</h3>
 	<p>EAGL has an <code>_eagl_plugins</code> directory where you can put php files to run custom scripts on your site. All files in this folder are automatically run on each page.</p>
+	<p role="note">If you're only defining one custom variable or function, you would probably just insert it into your <code>functions.php</code> file instead.</p>
 
 	<p>An example of the <code>getUA()</code> function provided by the <code>useragent.php</code> plugin:</p>
 	<p><code><?php getUA(); ?></code></p>
