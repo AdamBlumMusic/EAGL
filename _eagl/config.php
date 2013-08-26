@@ -2,14 +2,12 @@
 	
 	/*
 		Configuration File
-		** for script and stylesheet resources, remember to omit the file extension **
+		** for css and js resources, remember to omit the file extension **
 	*/
 
 	$eagl_scripts = "jquery, highlight, fittext, modernizr, global";
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
-
-	$eagl_plugins = "global";
 
 	/*
 		Metadata
@@ -30,4 +28,4 @@
 
 	$eagl_nostyles = "false";
 	$eagl_developerInfo = "true";
-?>																		
+?>																				

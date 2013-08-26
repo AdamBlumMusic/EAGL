@@ -34,7 +34,8 @@
 	<p>The admin section features a new custom menu at the top of the website (similar to WordPress), and additional pages where you can create new blog posts, editing configuration files, and check general site statistics.</p>
 
 
-
+	<h3>Custom Plugins</h3>
+	<p>EAGL has an <code>_eagl_plugins</code> directory where you can put php files to run custom scripts on your site. All files in this folder are automatically run on each page.</p>
 
 
 
