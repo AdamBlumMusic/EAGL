@@ -215,7 +215,7 @@ function eagl_secure() {
   if ($_SESSION['loggedIn'] == "true") {
 	# code...
   } else {
-	header( "Location: login.php" ) ;
+	header( "Location: login.php?ref=auth" ) ;
   }
 }
 

@@ -12,7 +12,22 @@
 		<h2>Fun Stuff</h2>
 	</header>
 
-	<p>EAGL is a fully-functional blogging platform in PHP.</p>
+	<p>EAGL is a fully-functional blogging and website creation platform written in PHP.</p>
+
+
+	<h2>Features</h2>
+
+	<ul>
+		<li>Config file for easy configuration</li>
+		<li>Ability to add custom functions</li>
+		<li>Blog post editor</li>
+		<li></li>
+		<li>Ability to add custom plugins</li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
 
 	<h3>Config.php Features</h3>
 	<p>EAGL uses a <code>config.php</code> file to manage assets and metadata. More specifically:</p>
@@ -36,6 +51,9 @@
 
 	<h3>Custom Plugins</h3>
 	<p>EAGL has an <code>_eagl_plugins</code> directory where you can put php files to run custom scripts on your site. All files in this folder are automatically run on each page.</p>
+
+	<p>An example of the <code>getUA()</code> function provided by the <code>useragent.php</code> plugin:</p>
+	<p><code><?php getUA(); ?></code></p>
 
 
 

@@ -10,15 +10,21 @@
 	</header>
 </article>
 
+
+<?php
+	if (isset($_GET['ref'])) {
+		echo "<p>You need to login to access this page.</p>";
+	}
+?>
+
+
+
+
 <?php
 if (isset($_POST['user'])) {
   $userAttempt = $_POST['user'];
   $passAttemptNoHash = $_POST['pass'];
-
-
-
   $passAttemptHashed = hash('whirlpool', $passAttemptNoHash);
-
 
   if ($userAttempt == "$eagl_user" && $passAttemptHashed == "$eagl_pass") {
     eagl_loginSuccess();
