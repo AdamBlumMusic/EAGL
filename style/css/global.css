@@ -1442,3 +1442,23 @@ nav[role="group"] {
   width: auto; }
   [data-submit]:hover {
     color: #2c90c6; }
+
+[data-cols-3] {
+  background: #f6f6f6;
+  margin: 1.5em auto;
+  padding: 0.5em;
+  -moz-column-count: 4;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 1em; }
+  [data-cols-3] a {
+    font-size: 0.75rem; }
+    [data-cols-3] a:hover {
+      background: rgba(0, 0, 0, 0.05);
+      color: #2c90c6; }
+  @media screen and (max-width: 48rem) {
+    [data-cols-3] {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      max-width: 37.5rem;
+      margin: 0 auto; } }

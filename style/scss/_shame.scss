@@ -307,3 +307,52 @@ nav[role="group"] {background: $lite;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+[data-cols-3] {
+
+background:  $lite;
+margin:  1.5em auto;
+padding:  0.5em;
+
+-moz-column-count: 4;
+-moz-column-gap: 1em;
+//		-moz-column-rule: 1px solid black; 
+-webkit-column-count: 4;
+-webkit-column-gap: 1em;
+//		-webkit-column-rule: 1px solid black;
+
+a {
+	font-size:  0.75rem;
+	&:hover {
+		background:  rgba(0,0,0,0.05);
+		color:  $blue;
+	}
+}
+
+	@media screen and (max-width:  $alpha) {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		max-width:  $paragraph-width * 0.75;
+		margin:  0 auto;
+	}
+
+}
+
+
+
+
+
+
+
+
+
