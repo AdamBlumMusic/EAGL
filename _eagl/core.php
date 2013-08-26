@@ -177,6 +177,10 @@ $eagl_today = date("F j Y");
 
 $eagl_todayNum = date("Y n d");
 
+$eagl_author = "$eagl_firstName $eagl_lastName";
+
+$eagl_admin = "$eagl_author";
+
 function eagl_login() {
 
 

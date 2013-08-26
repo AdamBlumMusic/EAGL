@@ -15,12 +15,10 @@
 
 	$eagl_firstName = "Adam";
 	$eagl_lastName = "Blum";
-	$eagl_author = "$eagl_firstName $eagl_lastName";
-	$eagl_admin = "$eagl_author";
+
 
 	$eagl_birthDate = "10/20/1995";
 	$eagl_adminEmail = "adamblum@adamblummusic.com";
-
 
 	/*
 		General Development Flags
