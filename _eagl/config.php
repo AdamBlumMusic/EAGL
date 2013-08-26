@@ -9,7 +9,7 @@
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
 
-	$eagl_version = "1.0";
+	$eagl_version = "1.0.1";
 
 	$eagl_adminUsername = "admin";
 	$eagl_adminPassword = "thepassword";
@@ -20,7 +20,6 @@
 
 	$eagl_firstName = "Adam";
 	$eagl_lastName = "Blum";
-
 
 	$eagl_birthDate = "10/20/1995";
 	$eagl_adminEmail = "adamblum@adamblummusic.com";

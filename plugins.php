@@ -5,16 +5,11 @@
 	<?php include "includes/legacy.php"; ?>
 	<?php include "includes/navigation.php"; ?>
 	<?php eagl_secure(); ?>
-<h3>Info for <?php echo $eagl_admin; ?></h3>
+<h3>Installed Plugins</h3>
+<p role="note" rel="about plugins">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fugiat, tenetur itaque sequi est reprehenderit molestias veritatis nulla animi architecto voluptatem cupiditate consequuntur laborum id rerum non quaerat dignissimos voluptas.</p>
 <article role="group">
-
 	<?php eagl_generateFilelist("_eagl_plugins/"); ?>
-
 </article>
-
-<p><?php plug(); ?></p>
-
-
 <?php include "includes/footer.php"; ?>
 </body>
 </html>

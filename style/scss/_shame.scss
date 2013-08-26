@@ -227,7 +227,16 @@ nav[role="group"] {background: $lite;}
 
 
 
-
+[role="directory"] {
+	padding: 0.125em 1em;
+	max-width:  $paragraph-width;
+	margin:  0 auto;
+	background:  $lite;
+	list-style-type:  none;
+	ul {
+		list-style-type:  none;
+	}
+}
 
 
 

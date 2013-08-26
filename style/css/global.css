@@ -1398,3 +1398,12 @@ nav[role="group"] {
 
 [data-fade] {
   opacity: 0.5; }
+
+[role="directory"] {
+  padding: 0.125em 1em;
+  max-width: 50rem;
+  margin: 0 auto;
+  background: #f6f6f6;
+  list-style-type: none; }
+  [role="directory"] ul {
+    list-style-type: none; }
