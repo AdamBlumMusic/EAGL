@@ -11,7 +11,8 @@
 
 	$eagl_prefetches = "about.php, index.php";
 
-	$eagl_version = "1.0.1";
+	$eagl_version = "1.0.2";
+	$eagl_version_meta = "alpha";
 
 	$eagl_adminUsername = "admin";
 	$eagl_adminPassword = "thepassword";
@@ -34,6 +35,6 @@
 	*/
 
 	$eagl_nostyles = "false";
-	$eagl_noscripts = "false";
+	$eagl_noscripts = "false"; // disabling javascript makes parts of the admin section unusable, use with caution!
 	$eagl_developerInfo = "true";
 ?>																				

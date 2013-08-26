@@ -10,8 +10,6 @@ $eagl_thispage = basename($_SERVER['PHP_SELF']); // global variable to return th
 
 
 
-
-
 function eagl_getFilesize($file,$digits = 2) {
 	if (is_file($file)) {
 	$filePath = $file;
@@ -28,7 +26,6 @@ function eagl_getFilesize($file,$digits = 2) {
 	}
   return false;
 }
-
 
 
 	/*

@@ -2,17 +2,14 @@
 New Post Example: Epic Stuff
 August 25 2013
 -->
-
  <article role='article'><header><h1>New Post Example</h1><h2>Epic Stuff</h2><time>August 25 2013</time></header>
-
- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br></p><pre>&lt;html&gt;
-&lt;head&gt;
-&lt;link rel="stylesheet" href="style.css" /&gt;
-&lt;title&gt;Site Title&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;p&gt;lorem.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</pre><p>blah blah blah blah</p><h1>yay big heading</h1>
- 
+ <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br></p><pre><html>
+<head>
+<link rel="stylesheet" href="style.css" />
+<title>Site Title</title>
+</head>
+<body>
+<p>lorem.</p>
+</body>
+</html></pre><p>blah blah blah blah</p><h1>yay big heading</h1>
 </article>

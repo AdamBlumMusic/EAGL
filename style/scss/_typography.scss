@@ -10,12 +10,7 @@ body {
 			font-size:  $font-size-alt;
 		}
 
-
-
-
 }
-
-
 
 a[role="link"] {
 	@include link;
@@ -247,18 +242,6 @@ time {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 dt, dd, menu, form {
 	max-width: $paragraph-width;
 	margin:  0 auto;
@@ -309,9 +292,6 @@ ul, ol {
 li {
 	margin-bottom:  0.5em;
 }
-
-
-
 
 
 
@@ -395,6 +375,3 @@ a[rel="back"] {
 		padding-right:  1em;
 	}
 }
-
-
-

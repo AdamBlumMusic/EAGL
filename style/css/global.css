@@ -825,7 +825,8 @@ p.social {
     -moz-box-flex: 1;
     -ms-flex: 1;
     -webkit-flex: 1;
-    flex: 1; }
+    flex: 1;
+    margin: 0 0.5em; }
     @media screen and (max-width: 48rem) {
       [role="grid"] [role="gridcell"] {
         display: block;
@@ -835,8 +836,6 @@ p.social {
         -webkit-flex: none;
         flex: none;
         width: 100%; } }
-    [role="grid"] [role="gridcell"] p {
-      margin: 0 1em; }
 
 [data-logged-in] {
   padding-top: 2em; }
@@ -1382,9 +1381,6 @@ nav[role="toolbar"] {
 nav[role="group"] {
   background: #f6f6f6; }
 
-[data-logged-in] .large {
-  min-height: 20em; }
-
 [data-fade] {
   opacity: 0.5; }
 
@@ -1396,3 +1392,53 @@ nav[role="group"] {
   list-style-type: none; }
   [role="directory"] ul {
     list-style-type: none; }
+
+.file-edit-bar {
+  border-left: 0.25em solid #5bc8a4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: #5bc8a4;
+  height: 2em; }
+  .file-edit-bar a {
+    color: #5bc8a4;
+    padding: 0 1em; }
+    .file-edit-bar a:hover {
+      color: #2c90c6; }
+  .file-edit-bar i {
+    line-height: 2em;
+    margin: 0 1em;
+    text-align: center; }
+    .file-edit-bar i[rel="back"] {
+      margin: 0 0.125em; }
+
+.page-edit-text {
+  position: fixed;
+  top: 2em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  padding-bottom: 2.5em;
+  background: #222222;
+  color: white;
+  border-color: #444444; }
+  .page-edit-text:focus {
+    border-color: #5bc8a4; }
+
+[data-submit] {
+  position: absolute;
+  display: block;
+  height: 3em;
+  text-decoration: none;
+  right: 0;
+  top: 0;
+  margin-top: 0.25em;
+  padding: 0.75em 0.5em;
+  background: black;
+  color: #5bc8a4;
+  width: auto; }
+  [data-submit]:hover {
+    color: #2c90c6; }

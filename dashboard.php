@@ -16,7 +16,12 @@
 	<section role="gridcell">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id, molestias eveniet ad optio similique eum modi adipisci cupiditate dicta. Non, modi, nesciunt recusandae tenetur magni quia alias consectetur excepturi.</p>
 	</section>
+
+	<section role="gridcell">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, id, molestias eveniet ad optio similique eum modi adipisci cupiditate dicta. Non, modi, nesciunt recusandae tenetur magni quia alias consectetur excepturi.</p>
+	</section>
 </article>
+
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eius odit culpa fuga quos illo corporis quisquam? Officia, reiciendis molestias enim officiis quaerat maiores aut ut numquam incidunt rerum! Tempore.</p>
 

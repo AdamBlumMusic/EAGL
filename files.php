@@ -6,8 +6,14 @@
 	<?php include "includes/navigation.php"; ?>
 	<?php eagl_secure(); ?>
 
-	<h1>Files</h1>
-	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone!</p>
+
+	<article role="article">
+		<header>
+			<h1 data-icon="code"></h1>
+		</header>
+	</article>
+
+	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone! It is probably more efficient if you do the majority of your editing locally, but if you need to make a quick fix, this </p>
 
 
 

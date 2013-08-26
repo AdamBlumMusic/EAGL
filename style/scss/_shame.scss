@@ -214,7 +214,7 @@ nav[role="group"] {background: $lite;}
 [data-logged-in] {
 
 	.large {
-		min-height:  20em;
+//		min-height:  20em;
 	}
 
 }
@@ -243,10 +243,67 @@ nav[role="group"] {background: $lite;}
 
 
 
+.file-edit-bar {
+	border-left:  0.25em solid $green;
+	position: fixed;
+	top:  0;
+	left:  0;
+	right:  0;
+	background:  black;
+	color:  $green;
+	height:  2em;
+	a {
+		color:  $green;
+		padding:  0 1em;
+		&:hover {
+			color:  $blue;
+		}
+	}
+	i {
+		line-height:  2em;
+		margin:  0 1em;
+		text-align:  center;
+		&[rel="back"] {
+			margin:  0 0.125em;
+		}
+	}
+}
 
 
 
+.page-edit-text {
+	position: fixed; 
+	top:  2em;
+	right:  0;
+	bottom:  0;
+	left:  0;
+	height:  100%;
+	padding-bottom:  2.5em;
+	background:  $darker;
+	color:  white;
+	border-color:  $dark;
+	&:focus {
+		border-color:  $green;
+	}
+}
 
+[data-submit] {
+	position:  absolute; 
+	display:  block;
+	height:  3em;
+	//line-height:  1;
+	text-decoration:  none;
+	right:  0;
+	top:  0;
+	margin-top:  0.25em;
+	padding:  0.75em 0.5em;
+	background:  black;
+	color:  $green;
+	&:hover {
+		color:  $blue;
+	}
+	width:  auto;
+}
 
 
 
