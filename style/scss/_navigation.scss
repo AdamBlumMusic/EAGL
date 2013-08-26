@@ -44,23 +44,6 @@ body > footer {
 
 		border-top:  $px solid $gray;
 
-		@include flex;
-
-
-		section {
-			@include flexbox(1);
-			display:  inline-block;
-			text-align:  center;
-			padding:  1em 1.5em;
-			font-size:  1.5rem;
-			color:  $dark;
-			&:hover {
-				color:  $maroon;
-			}
-
-	}
-
-
 }
 
 

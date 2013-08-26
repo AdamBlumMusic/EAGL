@@ -16,7 +16,6 @@
 
 
 	<h2>Features</h2>
-
 	<ul>
 		<li>Config file for easy configuration</li>
 		<li>Ability to add custom functions</li>
@@ -35,9 +34,6 @@
 			<li>Include scripts, where you specify order</li>
 			<li>Include stylesheets, where you specify order</li>
 			<li>Add metadata for each page, such as descriptions and authors</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
 		</ul>
 
 	<figure>
