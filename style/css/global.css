@@ -1266,6 +1266,12 @@ pre .xml .css,
 pre .xml .cdata {
   opacity: 0.5; }
 
+/*
+	_SHAME.SCSS
+	WHERE GOOD CODE GOES TO DIE
+	put random stuff here to be organized later. this file should be empty for production
+
+*/
 progress {
   display: block;
   margin: 0.5em auto;
