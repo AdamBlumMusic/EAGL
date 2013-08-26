@@ -18,4 +18,13 @@ button, %button {
 	letter-spacing:  0.0625rem;
 	text-transform:  uppercase;
 	cursor:  pointer;
+
+	&[download] {
+		&:after {
+			content: "download";
+			font-family:  "AdamBlumIcons";
+			text-transform:  none;
+			margin-left: 0.5em;
+		}
+	}
 }

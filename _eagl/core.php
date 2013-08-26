@@ -32,25 +32,51 @@ function eagl_getFilesize($file,$digits = 2) {
 
 
 	/*
-	======================
-	  LOADING JAVASCRIPT
-	======================
+	==================================================================
+	==================================================================
+	  						LOADING JAVASCRIPT
+	==================================================================
+	==================================================================
 	*/
 	echo "\n\t<!-- Javascript Files -->\n";
 	$eagl_scriptsarray = explode(", ",$eagl_scripts);
 	reset($eagl_scriptsarray);
 		while (list(, $value) = each($eagl_scriptsarray)) {
-			echo "\t<script src='scripts/$value.js'></script> <!-- $value.js -->\n";
+			echo "\t<script async src='scripts/$value.js'></script> <!-- $value.js -->\n";
 		}
 	/*
-	===============================================================================================================================
+	==================================================================
+	==================================================================
 	*/
 
 
+
+
 	/*
-	======================
-	  LOADING STYLESHEETS
-	======================
+	==================================================================
+	==================================================================
+	  						PREFETCH RESOURCES
+	==================================================================
+	==================================================================
+	*/
+	  $eagl_prefetcharray = explode(", ",$eagl_prefetches);
+	  reset($eagl_prefetcharray);
+	  while (list(, $eagl_prefetch) = each($eagl_prefetcharray)) {
+		echo "\t<link rel='prefetch' href='$eagl_prefetch' /> <!-- $eagl_prefetch -->\n";
+	  }
+	/*
+	==================================================================
+	==================================================================
+	*/
+
+
+
+	/*
+	==================================================================
+	==================================================================
+	  						LOADING STYLESHEETS
+	==================================================================
+	==================================================================
 	*/
 	  echo "\n\t<!-- Stylesheet Files -->\n";
 	  $eagl_stylesarray = explode(", ",$eagl_stylesheets);
@@ -62,7 +88,8 @@ function eagl_getFilesize($file,$digits = 2) {
 	  echo "\t<style> nav a[href='$eagl_thispage'] {color:  #eb5448;} </style>\n";
 	  echo "\t<style> nav[role='navigation'] a[href='$eagl_thispage'] {color:  #eb5448;} </style>\n";
 	/*
-	===============================================================================================================================
+	==================================================================
+	==================================================================
 	*/
 
 
@@ -135,15 +162,18 @@ function ago($time)
 	   }
 	}
 	/*
-	===============================================================================================================================
+	==================================================================
+	==================================================================
 	*/
 
 
 
 	/*
-	======================
+	==================================================================
+	==================================================================
 	  GENERATE FILE LIST
-	======================
+	==================================================================
+	==================================================================
 	*/
 
 	function eagl_generateFilelist($dir) {
@@ -158,8 +188,73 @@ function ago($time)
 	   }
 	}
 	/*
-	===============================================================================================================================
+	==================================================================
+	==================================================================
 	*/
+
+
+
+
+function eagl_formField($name, $type, $label, $placeholder = "", $attr = "") {
+
+	$output = "<label for='$name'>$label</label>\n<input type='$type' placeholder='$placeholder' $attr name='$name' id='$name' />";
+	echo $output;
+
+}
+
+
+
+
+
+
+function eagl_wysiwyg($form_jd, $content_jd) {
+
+	$output = "
+<section role='group' id='editControls'>
+<nav role='toolbar'>
+<a role='button' data-icon='undo' data-role='undo' href='#'></a>
+<a role='button' data-icon='redo' data-role='redo' href='#'></a>
+<a role='button' data-icon='bold' data-role='bold' href='#'></a>
+<a role='button' data-icon='italic' data-role='italic' href='#'></a>
+<a role='button' data-icon='underline' data-role='underline' href='#'></a>
+<a role='button' data-icon='strikethrough' data-role='strikeThrough' href='#'></a>
+<a role='button' data-icon='pilcrow' data-role='p' href='#'></a>
+<a role='button' data-icon='leftalign' data-role='justifyLeft' href='#'></a>
+<a role='button' data-icon='center' data-role='justifyCenter' href='#'></a>
+<a role='button' data-icon='rightalign' data-role='justifyRight' href='#'></a>
+<a role='button' data-icon='justify' data-role='justifyFull' href='#'></a>
+<a role='button' data-icon='indentright' data-role='indent' href='#'></a>
+<a role='button' data-icon='indentleft' data-role='outdent' href='#'></a>
+<a role='button' data-icon='ul' data-role='insertUnorderedList' href='#'></a>
+<a role='button' data-icon='ol' data-role='insertOrderedList' href='#'></a>
+</nav>
+
+<nav role='toolbar'>
+<a role='button' data-role='h1' href='#'>h1</a>
+<a role='button' data-role='h2' href='#'>h2</a>
+<a role='button' data-role='h3' href='#'>h3</a>
+<a role='button' data-role='h4' href='#'>h4</a>
+<a role='button' data-role='h5' href='#'>h5</a>
+<a role='button' data-role='h6' href='#'>h6</a>
+<a role='button' data-role='pre' href='#'>pre</a>
+<a role='button' data-role='subscript' href='#'>x<sup>1</sup></a>
+<a role='button' data-role='superscript' href='#'>x<sub>1</sub></a>
+</nav>
+</section>
+<div contenteditable='true' id='$content_jd'></div>	
+<form>
+<input type='submit' form='$form_jd' name='submit' id='submit' />
+</form>
+";
+echo $output;
+
+}
+
+
+
+
+
+
 
 
 

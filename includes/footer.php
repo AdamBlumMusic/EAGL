@@ -1,4 +1,4 @@
-<footer>
+<footer aria-label="Site Footer">
 	<article role="grid">
 			<section role="gridcell">
 		<p>&copy; <?php echo date("Y"); ?> <?php echo $eagl_author; ?></p>
@@ -28,5 +28,11 @@
 	<?php
 		if ($eagl_nostyles == "true") {
 			echo "<script> $('link[rel=stylesheet]').remove(); </script>";
+		}
+	?>
+
+		<?php
+		if ($eagl_noscripts == "true") {
+			echo "<script> $('script').remove(); </script>";
 		}
 	?>

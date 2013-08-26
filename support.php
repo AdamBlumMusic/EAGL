@@ -67,6 +67,18 @@
 
 
 
+<?php eagl_formField("hola", "text", "Type your name"); ?>
+
+<?php eagl_formField("hola2", "text", "Type your name", "placeholder", "required"); ?>
+
+
+
+
+
+
+
+
+
 </article>
 
 <?php include "includes/footer.php"; ?>

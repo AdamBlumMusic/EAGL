@@ -18,10 +18,6 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 	$blogpost_dateNum = $_POST['blogpost_dateNum'];
 	$blogpost_content = $_POST['blogpost_content'];
 
-
-
-
-
 	$blogpost_slug = eagl_createSlug("$blogpost_dateNum-$blogpost_title-$blogpost_subtitle");
 	$myFile = "blog/$blogpost_slug";
 
@@ -55,27 +51,18 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 <article role="form">
 	
 		<form action="#" method="post" id="postnew">
-		<label for="blogpost_title">Title</label>
-		<input type="text" required autocomplete="off" name="blogpost_title" id="blogpost_title" />
-
-		<label for="blogpost_subtitle">Subtitle</label>
-		<input type="text" required autocomplete="off" name="blogpost_subtitle" id="blogpost_subtitle" />
-
-		<label for="blogpost_date">Date</label>
-		<input type="text" required autocomplete="off" name="blogpost_date" id="blogpost_date" value="<?php echo $eagl_today; ?>" />
-
+		<?php eagl_formField("blogpost_title", "text", "Title", "Blog Post Title", "required autocomplete='off'"); ?>
+		<?php eagl_formField("blogpost_subtitle", "text", "Subtitle", "Blog Post Subtitle", "required autocomplete='off'"); ?>
+		<input type="hidden" required autocomplete="off" name="blogpost_date" id="blogpost_date" value="<?php echo $eagl_today; ?>" />
 		<input type="hidden" autocomplete="off" name="blogpost_dateNum" id="blogpost_dateNum" value="<?php echo $eagl_todayNum; ?>" />
-
-
 		<label for="blogpost_content">Static HTML</label>
 		<textarea name="blogpost_content" id="blogpost_content"></textarea>
 		<p role="note" rel="Info">Anything written in the Static HTML field is placed below the main content in the post. If you wish to write the post entirely in HTML, that can be done as well. Server-side code such as php cannot be included.</p>
 
-		<label for="blogpost_eagl_code">EAGL Code</label>
-		<input type="text" autocomplete="off" name="blogpost_eagl_code" id="blogpost_eagl_code" />
+
+		<?php eagl_formField("blogpost_eagl_code", "text", "EAGL Code", "", "autocomplete='off'"); ?>
+
 		<ul role="note" rel="Eagl Codes">
-			<li><code>eagl_del</code> will delete the current post</li>
-			<li><code>eagl_draft</code> will save the current post as a draft</li>
 			<li><code>eagl_del</code> will delete the current post</li>
 		</ul>
 		
@@ -84,46 +71,8 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 
 <h4>Editor</h4>
 
-<section role="group" id='editControls'>
-			<nav role="toolbar">
-				<a role="button" data-icon="undo" data-role='undo' href='#'></a>
-				<a role="button" data-icon="redo" data-role='redo' href='#'></a>
-				<a role="button" data-icon="bold" data-role='bold' href='#'></a>
-				<a role="button" data-icon="italic" data-role='italic' href='#'></a>
-				<a role="button" data-icon="underline" data-role='underline' href='#'></a>
-				<a role="button" data-icon="strikethrough" data-role='strikeThrough' href='#'></a>
-				<a role="button" data-icon="pilcrow" data-role='p' href='#'></a>
-				<a role="button" data-icon="leftalign" data-role='justifyLeft' href='#'></a>
-				<a role="button" data-icon="center" data-role='justifyCenter' href='#'></a>
-				<a role="button" data-icon="rightalign" data-role='justifyRight' href='#'></a>
-				<a role="button" data-icon="justify" data-role='justifyFull' href='#'></a>
-				<a role="button" data-icon="indentright" data-role='indent' href='#'></a>
-				<a role="button" data-icon="indentleft" data-role='outdent' href='#'></a>
-				<a role="button" data-icon="ul" data-role='insertUnorderedList' href='#'></a>
-				<a role="button" data-icon="ol" data-role='insertOrderedList' href='#'></a>
-			</nav>
 
-			<nav role="toolbar">
-				<a role="button" data-role='h1' href='#'>h1</a>
-				<a role="button" data-role='h2' href='#'>h2</a>
-				<a role="button" data-role='h3' href='#'>h3</a>
-				<a role="button" data-role='h4' href='#'>h4</a>
-				<a role="button" data-role='h5' href='#'>h5</a>
-				<a role="button" data-role='h6' href='#'>h6</a>
-				<a role="button" data-role='pre' href='#'>pre</a>
-				<a role="button" data-role='subscript' href='#'>x<sup>1</sup></a>
-				<a role="button" data-role='superscript' href='#'>x<sub>1</sub></a>
-			</nav>
-		</section>
-				<div contenteditable="true" id="ce01"></div>	
-
-				<form>
-					<p role="note" rel="Info">Anything written in the Static HTML field is placed below the main content in the post. If you wish to write the post entirely in HTML, that can be done as well. Server-side code such as php cannot be included.</p>
-					<input type="submit" form="postnew" name="submit" id="submit" />
-				</form>
-
-
-
+<?php eagl_wysiwyg("postnew", "ce01"); ?>
 </article>
 
 
@@ -141,6 +90,30 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 		var oldcontent = $("#blogpost_content").val();
   		$("#blogpost_content").val(content + "\n" + oldcontent);
 	});
+</script>
+
+
+<script>
+$(function() {
+  $('#editControls a').click(function(e) {
+    switch($(this).data('role')) {
+      case 'h1':
+      case 'h2':
+      case 'h3':
+      case 'h4':
+      case 'h5':
+      case 'h6':
+      case 'pre':
+      case 'p':
+        document.execCommand('formatBlock', false, $(this).data('role'));
+        break;
+      default:
+        document.execCommand($(this).data('role'), false, null);
+        break;
+    }
+    return false;
+  });
+});
 </script>
 
 

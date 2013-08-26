@@ -17,7 +17,8 @@
 
  ?>
 <h4>Editing <?php echo $myFile; ?></h4>
-<p><?php eagl_getLinecount("$post"); ?> lines, <?php echo eagl_getFilesize($myFile); ?></p>
+<p>Lines: <?php eagl_getLinecount("$post"); ?></p>
+<p>Size: <?php echo eagl_getFilesize($myFile); ?></p>
 
 
 

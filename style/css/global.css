@@ -123,7 +123,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icn-"] {
 */
-.icn-download, .icn-upload, .icn-menu, .icn-checkmark, .icn-minus, .icn-plus, .icn-close, .icn-play, .icn-pause, .icn-stop, .icn-first, .icn-last, .icn-loop, .icn-twitter, .icn-facebook, .icn-google-plus, .icn-vimeo, .icn-flickr, .icn-dribbble, .icn-github, .icn-apple, .icn-tux, .icn-tumblr, .icn-wordpress, .icn-youtube, .icn-android, .icn-windows, .icn-windows8, .icn-soundcloud, .icn-reddit, .icn-paypal, .icn-stackoverflow, .icn-chrome, .icn-css3, .icn-html5, .icn-safari, .icn-opera, .icn-IE, .icn-firefox, .icn-file-zip, .icn-file-powerpoint, .icn-file-xml, .icn-file-css, .icn-file-excel, .icn-file-word, .icn-file-pdf, .icn-libreoffice, .icn-google-drive, .icn-code, .icn-star, .icn-heart, .icn-attachment, .icn-cloud, .icn-cloud-download, .icn-cloud-upload, .icn-bookmark, .icn-spinner, .icn-dropbox, .icn-bubbles, .icn-tag, .icn-cart, .icn-phone, .icn-clock, .icn-arrow-up-right, .icn-arrow-right, .icn-arrow-down-right, .icn-arrow-down, .icn-arrow-down-left, .icn-arrow-left, .icn-arrow-up, .icn-arrow-up-left, .icn-arrow-right-2, .icn-arrow-up-2, .icn-arrow-down-2, .icn-arrow-left-2, .icn-undo, .icn-redo, .icn-list, .icn-numbered-list, .icn-indent-decrease, .icn-indent-increase, .icn-paragraph-left, .icn-paragraph-center, .icn-paragraph-right, .icn-paragraph-justify, .icn-pilcrow, .icn-bold, .icn-underline, .icn-italic, .icn-strikethrough, .icn-font, .icn-text-height, .icn-text-width {
+.icn-download:before, .icn-upload:before, .icn-menu:before, .icn-checkmark:before, .icn-minus:before, .icn-plus:before, .icn-close:before, .icn-play:before, .icn-pause:before, .icn-stop:before, .icn-first:before, .icn-last:before, .icn-loop:before, .icn-twitter:before, .icn-facebook:before, .icn-google-plus:before, .icn-vimeo:before, .icn-flickr:before, .icn-dribbble:before, .icn-github:before, .icn-apple:before, .icn-tux:before, .icn-tumblr:before, .icn-wordpress:before, .icn-youtube:before, .icn-android:before, .icn-windows:before, .icn-windows8:before, .icn-soundcloud:before, .icn-reddit:before, .icn-paypal:before, .icn-stackoverflow:before, .icn-chrome:before, .icn-css3:before, .icn-html5:before, .icn-safari:before, .icn-opera:before, .icn-IE:before, .icn-firefox:before, .icn-file-zip:before, .icn-file-powerpoint:before, .icn-file-xml:before, .icn-file-css:before, .icn-file-excel:before, .icn-file-word:before, .icn-file-pdf:before, .icn-libreoffice:before, .icn-google-drive:before, .icn-code:before, .icn-star:before, .icn-heart:before, .icn-attachment:before, .icn-cloud:before, .icn-cloud-download:before, .icn-cloud-upload:before, .icn-bookmark:before, .icn-spinner:before, .icn-dropbox:before, .icn-bubbles:before, .icn-tag:before, .icn-cart:before, .icn-phone:before, .icn-clock:before, .icn-arrow-up-right:before, .icn-arrow-right:before, .icn-arrow-down-right:before, .icn-arrow-down:before, .icn-arrow-down-left:before, .icn-arrow-left:before, .icn-arrow-up:before, .icn-arrow-up-left:before, .icn-arrow-right-2:before, .icn-arrow-up-2:before, .icn-arrow-down-2:before, .icn-arrow-left-2:before, .icn-undo:before, .icn-redo:before, .icn-list:before, .icn-numbered-list:before, .icn-indent-decrease:before, .icn-indent-increase:before, .icn-paragraph-left:before, .icn-paragraph-center:before, .icn-paragraph-right:before, .icn-paragraph-justify:before, .icn-pilcrow:before, .icn-bold:before, .icn-underline:before, .icn-italic:before, .icn-strikethrough:before, .icn-font:before, .icn-text-height:before, .icn-text-width:before {
   font-family: 'AdamBlumIcons';
   speak: none;
   /* Enable Ligatures */
@@ -778,60 +778,31 @@ body > header nav[role="navigation"] {
     body > header nav[role="navigation"] a:hover {
       color: #eb5448; }
 
-body > footer {
+footer[aria-label="Site Footer"] {
   max-width: 50rem;
   margin: 8em auto 1em auto;
+  padding-top: 1em;
   border-top: 0.0625rem solid #cccccc;
-  display: -webkit-box;
-  /* OLD: Safari, iOS, Android, older WebKit */
-  display: -moz-box;
-  /* OLD: Firefox (buggy) */
-  display: -ms-flexbox;
-  /* MID: IE 10 */
-  display: -webkit-flex;
-  /* NEW: Chrome 21+, Opera 15+, Safari 7+ */
-  display: flex;
-  /* NEW: Opera 12.1, Firefox 22+ */
-  width: 100%;
-  /* OLD: Firefox (bugfix) */ }
-  @media screen and (max-width: 48rem) {
-    body > footer {
-      display: block; } }
-  body > footer section {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -ms-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
-    display: inline-block;
-    text-align: center;
-    padding: 1em 1.5em;
-    font-size: 1.5rem;
-    color: #444444; }
-    @media screen and (max-width: 48rem) {
-      body > footer section {
-        display: block;
-        -webkit-box-flex: none;
-        -moz-box-flex: none;
-        -ms-flex: none;
-        -webkit-flex: none;
-        flex: none;
-        width: 100%; } }
-    body > footer section:hover {
-      color: #990033; }
+  font-size: 1rem; }
+  footer[aria-label="Site Footer"] p {
+    line-height: 1.25;
+    margin: 0; }
 
-p.social a[data-icon] {
-  display: inline-block;
-  width: 2em;
-  color: #cccccc;
-  border: none;
-  transition: all 0.2s ease-in-out; }
-  p.social a[data-icon][data-icon="facebook"]:hover {
-    color: #3b5998; }
-  p.social a[data-icon][data-icon="twitter"]:hover {
-    color: #00aced; }
-  p.social a[data-icon][data-icon="dribbble"]:hover {
-    color: #ea4c89; }
+p.social {
+  text-align: right; }
+  p.social a[data-icon] {
+    text-align: center;
+    display: inline-block;
+    width: 2em;
+    color: #cccccc;
+    border: none;
+    transition: all 0.2s ease-in-out; }
+    p.social a[data-icon][data-icon="facebook"]:hover {
+      color: #3b5998; }
+    p.social a[data-icon][data-icon="twitter"]:hover {
+      color: #00aced; }
+    p.social a[data-icon][data-icon="dribbble"]:hover {
+      color: #ea4c89; }
 
 [role="grid"] {
   display: -webkit-box;
@@ -849,14 +820,14 @@ p.social a[data-icon] {
   @media screen and (max-width: 48rem) {
     [role="grid"] {
       display: block; } }
-  [role="grid"] section, [role="grid"] [role="gridcell"] {
+  [role="grid"] [role="gridcell"] {
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -ms-flex: 1;
     -webkit-flex: 1;
     flex: 1; }
     @media screen and (max-width: 48rem) {
-      [role="grid"] section, [role="grid"] [role="gridcell"] {
+      [role="grid"] [role="gridcell"] {
         display: block;
         -webkit-box-flex: none;
         -moz-box-flex: none;
@@ -864,6 +835,8 @@ p.social a[data-icon] {
         -webkit-flex: none;
         flex: none;
         width: 100%; } }
+    [role="grid"] [role="gridcell"] p {
+      margin: 0 1em; }
 
 [data-logged-in] {
   padding-top: 2em; }
@@ -898,6 +871,14 @@ button {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   cursor: pointer; }
+  a[role="button"][download]:after,
+  input[type="submit"][download]:after,
+  input[type="reset"][download]:after,
+  button[download]:after {
+    content: "download";
+    font-family: "AdamBlumIcons";
+    text-transform: none;
+    margin-left: 0.5em; }
 
 form {
   max-width: 42.5rem;

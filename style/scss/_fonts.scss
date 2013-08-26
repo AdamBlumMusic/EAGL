@@ -126,6 +126,7 @@ you can use the generic selector below, but it's slower:
 [class*="icn-"] {
 */
 .icn-download, .icn-upload, .icn-menu, .icn-checkmark, .icn-minus, .icn-plus, .icn-close, .icn-play, .icn-pause, .icn-stop, .icn-first, .icn-last, .icn-loop, .icn-twitter, .icn-facebook, .icn-google-plus, .icn-vimeo, .icn-flickr, .icn-dribbble, .icn-github, .icn-apple, .icn-tux, .icn-tumblr, .icn-wordpress, .icn-youtube, .icn-android, .icn-windows, .icn-windows8, .icn-soundcloud, .icn-reddit, .icn-paypal, .icn-stackoverflow, .icn-chrome, .icn-css3, .icn-html5, .icn-safari, .icn-opera, .icn-IE, .icn-firefox, .icn-file-zip, .icn-file-powerpoint, .icn-file-xml, .icn-file-css, .icn-file-excel, .icn-file-word, .icn-file-pdf, .icn-libreoffice, .icn-google-drive, .icn-code, .icn-star, .icn-heart, .icn-attachment, .icn-cloud, .icn-cloud-download, .icn-cloud-upload, .icn-bookmark, .icn-spinner, .icn-dropbox, .icn-bubbles, .icn-tag, .icn-cart, .icn-phone, .icn-clock, .icn-arrow-up-right, .icn-arrow-right, .icn-arrow-down-right, .icn-arrow-down, .icn-arrow-down-left, .icn-arrow-left, .icn-arrow-up, .icn-arrow-up-left, .icn-arrow-right-2, .icn-arrow-up-2, .icn-arrow-down-2, .icn-arrow-left-2, .icn-undo, .icn-redo, .icn-list, .icn-numbered-list, .icn-indent-decrease, .icn-indent-increase, .icn-paragraph-left, .icn-paragraph-center, .icn-paragraph-right, .icn-paragraph-justify, .icn-pilcrow, .icn-bold, .icn-underline, .icn-italic, .icn-strikethrough, .icn-font, .icn-text-height, .icn-text-width {
+    &:before {
     font-family: 'AdamBlumIcons';
         speak: none;
     /* Enable Ligatures */
@@ -138,6 +139,7 @@ you can use the generic selector below, but it's slower:
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
+    }
 }
 .icn-download:before {
     content: "\64\6f\77\6e\6c\6f\61\64";

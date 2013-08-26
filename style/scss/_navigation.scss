@@ -37,13 +37,17 @@ body > header {
 
 
 
-body > footer {
+footer[aria-label="Site Footer"] {
 		
 		max-width:  $paragraph-width;
 		margin:  8em auto 1em auto;
-
+		padding-top:  1em;
 		border-top:  $px solid $gray;
-
+		font-size:  1rem;
+		p {
+			line-height:  1.25;
+			margin:  0;
+		}		
 }
 
 
@@ -53,7 +57,11 @@ body > footer {
 
 
 p.social {
+	
+	text-align:  right;
+
 	a[data-icon] {
+		text-align:  center;
 		display:  inline-block;
 		width:  2em;
 		color:  $gray;
@@ -91,8 +99,11 @@ p.social {
 [role="grid"] {
 	@include flex;
 
-	section, [role="gridcell"] {
-	@include flexbox(1);
+	[role="gridcell"] {
+		@include flexbox(1);
+		p {
+			margin:  0 1em;
+		}
 	}
 }
 
