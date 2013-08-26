@@ -619,6 +619,8 @@ kbd {
 
 code {
   background: #f6f6f6; }
+  p code:not(:only-child) {
+    margin-left: 0.3em; }
 
 small {
   font-size: 85%; }

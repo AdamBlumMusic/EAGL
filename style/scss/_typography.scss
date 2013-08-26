@@ -198,6 +198,7 @@ kbd {
 code {
 	@extend %monofont;
 	background:  $lite;
+	p &:not(:only-child) {margin-left:  0.3em;}
 }
 
 var {

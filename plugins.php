@@ -7,6 +7,13 @@
 	<?php eagl_secure(); ?>
 <h3>Installed Plugins</h3>
 <p role="note" rel="about plugins">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fugiat, tenetur itaque sequi est reprehenderit molestias veritatis nulla animi architecto voluptatem cupiditate consequuntur laborum id rerum non quaerat dignissimos voluptas.</p>
+
+
+<p>An example of the <code>getUA()</code> function provided by the <code>useragent.php</code> plugin:</p>
+
+<p><code><?php getUA(); ?></code></p>
+
+
 <article role="group">
 	<?php eagl_generateFilelist("_eagl_plugins/"); ?>
 </article>
