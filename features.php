@@ -20,12 +20,12 @@
 	<ul>
 		<li>Config file for easy configuration</li>
 		<li>Ability to add custom functions</li>
-		<li>Blog post editor</li>
-		<li></li>
+		<li>WYSIWYG Blog post editor</li>
+		<li>Administrator dashboard</li>
 		<li>Ability to add custom plugins</li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>Secure pages</li>
+		<li>File editor</li>
+		<li>Responsive design</li>
 	</ul>
 
 
@@ -55,8 +55,6 @@
 
 	<p>An example of the <code>getUA()</code> function provided by the <code>useragent.php</code> plugin:</p>
 	<p><code><?php getUA(); ?></code></p>
-
-
 
 </article>
 
