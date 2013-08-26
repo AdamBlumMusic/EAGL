@@ -12,7 +12,7 @@
 
 </article>
 
-
+<p><?php plug(); ?></p>
 
 <article>
 	<h2>Add New Plugin</h2>

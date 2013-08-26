@@ -37,9 +37,7 @@ if (isset($_POST['page_content'])) {
 
 
 <form action="#" method="post">
-	<textarea name="page_content" id="page_content" class="large">
-<?php echo $thepagecontent; ?>
-	</textarea>
+	<textarea name="page_content" id="page_content" class="large"><?php echo $thepagecontent; ?></textarea>
 	<input type="submit" />
 </form>
 

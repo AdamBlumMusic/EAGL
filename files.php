@@ -9,8 +9,23 @@
 	<h1>Files</h1>
 	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone!</p>
 
-<h2>Common Files</h2>
-<article role="group">
+
+
+
+
+<p><?php echo $plugintest; ?> blah blah</p>
+
+<article role="grid">
+	<section role="gridcell">
+		<h3>Pages</h3>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("./") ; ?>
+		</nav>
+	</section>
+
+
+		<section role="gridcell">
+	<h3>Common Files</h3>
 	<nav role="toolbar">
 		<a href="page_editor.php?post=_eagl/config.php" role="button">config</a>
 		<a href="page_editor.php?post=_eagl/functions.php" role="button">functions</a>
@@ -27,38 +42,42 @@
 	<nav role="toolbar">
 		<a href="page_editor.php?post=scripts/global.js" role="button">global.js</a>		
 	</nav>
-</article>
-
-
-<p><?php echo $plugintest; ?> blah blah</p>
-
-<article role="group">
-		<h3>Pages</h3>
-		<?php eagl_generateFilelist("./") ; ?>
-</article>
-
-
-<article role="group">
-		<h3>Core</h3>
-		<?php eagl_generateFilelist("_eagl/") ; ?>
-</article>
-
-<article role="group">
-		<h3>Blog Posts</h3>
-		<?php eagl_generateFilelist("blog/") ; ?>
+</section>
 </article>
 
 
 <article role="grid">
 	<section role="gridcell">
+		<h3>Core</h3>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("_eagl/") ; ?>
+		</nav>
+	</section>
+
+	<section role="gridcell">
+		<h3>Plugins</h3>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("_eagl_plugins/") ; ?>
+		</nav>
+	</section>
+</article>
+
+
+
+
+<article role="grid">
+	<section role="gridcell">
 		<h3>Includes</h3>
-		<p></p>
-		<?php eagl_generateFilelist("includes/"); ?>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("includes/"); ?>
+		</nav>
 	</section>
 
 	<section role="gridcell">
 		<h3>Scripts</h3>
-		<?php eagl_generateFilelist("scripts/"); ?>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("scripts/"); ?>
+		</nav>
 	</section>
 </article>
 
@@ -67,16 +86,25 @@
 <article role="grid">
 	<section role="gridcell">
 		<h3>CSS</h3>
-		<?php eagl_generateFilelist("style/css/"); ?>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("style/css/"); ?>
+		</nav>
 	</section>
 
 	<section role="gridcell">
 		<h3>Sass</h3>
-		<?php eagl_generateFilelist("style/scss/"); ?>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("style/scss/"); ?>
+		</nav>
 	</section>
 </article>
 
-
+<article role="group">
+		<h3>Blog Posts</h3>
+		<nav role="toolbar">
+			<?php eagl_generateFilelist("blog/") ; ?>
+		</nav>
+</article>
 
 
 	<?php include "includes/footer.php"; ?>
