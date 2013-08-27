@@ -244,14 +244,16 @@ nav[role="group"] {background: $lite;}
 
 
 .file-edit-bar {
-	border-left:  0.25em solid $green;
+	border-left:  0.5em solid $green;
 	position: fixed;
 	top:  0;
 	left:  0;
 	right:  0;
 	background:  black;
 	color:  $green;
-	height:  2em;
+	font-size:  1rem;
+	padding-bottom:  1em;
+
 	a {
 		color:  $green;
 		padding:  0 1em;
@@ -279,6 +281,8 @@ nav[role="group"] {background: $lite;}
 	left:  0;
 	height:  100%;
 	padding-bottom:  2.5em;
+	@extend %monofont;
+	font-size:  0.85rem;
 	background:  $darker;
 	color:  white;
 	border-color:  $dark;
@@ -317,19 +321,19 @@ nav[role="group"] {background: $lite;}
 
 
 
+$data-file-cols:  7;
 
 
-
-[data-cols-3] {
+[data-file-cols] {
 
 background:  $lite;
 margin:  1.5em auto;
 padding:  0.5em;
 
--moz-column-count: 4;
+-moz-column-count: $data-file-cols;
 -moz-column-gap: 1em;
 //		-moz-column-rule: 1px solid black; 
--webkit-column-count: 4;
+-webkit-column-count: $data-file-cols;
 -webkit-column-gap: 1em;
 //		-webkit-column-rule: 1px solid black;
 

@@ -27,6 +27,6 @@
 
 	<a href="#" download="file.txt" role="button">download me</a>
 
-	<?php include "includes/footer.php"; ?>
+<?php include "includes/footer.php"; ?>
 </body>
 </html>

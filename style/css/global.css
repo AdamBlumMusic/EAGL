@@ -446,7 +446,7 @@ h6 {
   font-family: 'fenixregular';
   color: #222222; }
 
-pre, code, var, samp {
+pre, code, var, samp, .page-edit-text {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   font-size: 0.75em; }
 
@@ -1394,14 +1394,15 @@ nav[role="group"] {
     list-style-type: none; }
 
 .file-edit-bar {
-  border-left: 0.25em solid #5bc8a4;
+  border-left: 0.5em solid #5bc8a4;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: black;
   color: #5bc8a4;
-  height: 2em; }
+  font-size: 1rem;
+  padding-bottom: 1em; }
   .file-edit-bar a {
     color: #5bc8a4;
     padding: 0 1em; }
@@ -1422,6 +1423,7 @@ nav[role="group"] {
   left: 0;
   height: 100%;
   padding-bottom: 2.5em;
+  font-size: 0.85rem;
   background: #222222;
   color: white;
   border-color: #444444; }
@@ -1446,22 +1448,22 @@ nav[role="group"] {
 [data-c] {
   text-align: center; }
 
-[data-cols-3] {
+[data-file-cols] {
   background: #f6f6f6;
   margin: 1.5em auto;
   padding: 0.5em;
-  -moz-column-count: 4;
+  -moz-column-count: 7;
   -moz-column-gap: 1em;
-  -webkit-column-count: 4;
+  -webkit-column-count: 7;
   -webkit-column-gap: 1em; }
-  [data-cols-3] a {
+  [data-file-cols] a {
     font-size: 0.75rem;
     text-transform: none; }
-    [data-cols-3] a:hover {
+    [data-file-cols] a:hover {
       background: rgba(44, 144, 198, 0.05);
       color: #2c90c6; }
   @media screen and (max-width: 48rem) {
-    [data-cols-3] {
+    [data-file-cols] {
       -moz-column-count: 1;
       -webkit-column-count: 1;
       max-width: 37.5rem;

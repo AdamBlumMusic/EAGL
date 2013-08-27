@@ -42,7 +42,7 @@
 
 
 <h3 data-c>All Files</h3>
-<article data-cols-3>
+<article data-file-cols>
 	<section>
 		<h5>Pages</h5>
 		<nav role="toolbar">
