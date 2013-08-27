@@ -24,7 +24,7 @@
 
 <article role="grid">
 <section role="gridcell">
-	<h3>Common Files</h3>
+	<h3 data-c>Common Files</h3>
 	<nav role="toolbar">
 		<a href="page_editor.php?post=_eagl/config.php" role="button">config</a>
 		<a href="page_editor.php?post=_eagl/functions.php" role="button">functions</a>
@@ -40,6 +40,8 @@
 </section>
 </article>
 
+
+<h3 data-c>All Files</h3>
 <article data-cols-3>
 	<section>
 		<h5>Pages</h5>

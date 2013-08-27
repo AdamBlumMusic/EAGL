@@ -1443,6 +1443,9 @@ nav[role="group"] {
   [data-submit]:hover {
     color: #2c90c6; }
 
+[data-c] {
+  text-align: center; }
+
 [data-cols-3] {
   background: #f6f6f6;
   margin: 1.5em auto;
@@ -1452,9 +1455,10 @@ nav[role="group"] {
   -webkit-column-count: 4;
   -webkit-column-gap: 1em; }
   [data-cols-3] a {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    text-transform: none; }
     [data-cols-3] a:hover {
-      background: rgba(0, 0, 0, 0.05);
+      background: rgba(44, 144, 198, 0.05);
       color: #2c90c6; }
   @media screen and (max-width: 48rem) {
     [data-cols-3] {

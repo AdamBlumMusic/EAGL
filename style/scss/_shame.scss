@@ -305,7 +305,9 @@ nav[role="group"] {background: $lite;}
 	width:  auto;
 }
 
-
+[data-c] {
+	text-align:  center;
+}
 
 
 
@@ -333,8 +335,9 @@ padding:  0.5em;
 
 a {
 	font-size:  0.75rem;
+	text-transform:  none;
 	&:hover {
-		background:  rgba(0,0,0,0.05);
+		background:  rgba($blue,0.05);
 		color:  $blue;
 	}
 }
