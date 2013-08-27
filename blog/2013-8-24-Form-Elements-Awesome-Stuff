@@ -29,36 +29,4 @@ August 24 2013
 			<input type="url" placeholder="www.example.com" name="website" id="website" />
 
 			<label for="notes">Notes</label>
-			<textarea name="notes" id="notes"></textarea>
-		</fieldset>
-
-
-		<fieldset role="gridcell">
-			<legend>Billing Information</legend>
-			<label for="street">Street</label>
-			<input type="text" placeholder="Street" name="street"  id="street" />
-
-			<label for="city">City</label>
-			<input type="text" placeholder="City" name="city" id="city" />
-			
-			<label for="state">State</label>
-			<input type="text" placeholder="State" name="state" id="state" />
-
-			<label for="zipcode">ZIP Code</label>
-			<input type="text" pattern="(\d{5}([\-]\d{4})?)
-" placeholder="ZIP Code" name="zipcode" id="zipcode" />
-
-			<label for="comments">Comments</label>
-			<textarea name="comments" id="comments"></textarea>
-		</fieldset>
-</section>
-
-
-
-
-<input type="submit" value="Send Form" />
-
-
-		
-	</form> 
-</article>
+			<textarea name="notes" id="notes">

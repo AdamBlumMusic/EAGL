@@ -43,8 +43,10 @@ if (isset($_POST['page_content'])) {
 			fclose($fh);
 			echo "<i>Your page, '$post', was saved!</i>";
 			echo "<i><a href='files.php' rel='back' data-icon='arroww'> View Changes</a></i>";
+			$edit_done = "true";
 		} else {
 			echo "<a href='#' id='save_page' data-submit data-icon='check' ></a>";
+			$edit_done = "false";
 		}
 
 ?>
@@ -61,12 +63,27 @@ if (isset($_POST['page_content'])) {
 <section role="gridcell">
 
 <form action="#" method="post" id="page_edit_form">
-	<textarea name="page_content" id="page_content" autofocus class="page-edit-text"><?php echo $thepagecontent; ?></textarea>
+	<textarea name="page_content" <?php if ($edit_done == "true") {echo "disabled";} ?> id="page_content" autofocus class="page-edit-text"><?php echo $thepagecontent; ?></textarea>
 </form>
 
 </section>
 
 </article>
+
+
+
+
+<?php if ($edit_done == "true") {echo "<div data-modal><a href='files.php'><i data-icon='check'></i></a></div>";} ?>
+
+
+
+
+
+
+
+
+
+
 
 <script>
 	HTMLTextAreaElement.prototype.getCaretPosition = function () { //return the caret position of the textarea

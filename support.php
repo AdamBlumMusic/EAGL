@@ -41,42 +41,29 @@
 
 
 <pre>
-&lt;?php include "includes/head.php"; ?&gt;
-&lt;title&gt;Adam Blum&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;?php include "includes/legacy.php"; ?&gt;
-&lt;?php include "includes/navigation.php"; ?&gt;
+<?php include "includes/head.php"; ?>
+<title>Adam Blum</title>
+</head>
+<body>
+<?php include "includes/legacy.php"; ?>
+<?php include "includes/navigation.php"; ?>
 
-&lt;!- Add Content Here --&gt;
+<!- Add Content Here -->
 
-&lt;?php include "includes/footer.php"; ?&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<?php include "includes/footer.php"; ?>
+</body>
+</html>
 </pre>
-
-
-
-
 
 <p>To make a page only available when logged in, use the following function:</p>
 <pre>
-&lt;?php eagl_secure(); ?&gt;
+<?php eagl_secure(); ?>
 </pre>
 <p>If you are not logged in, any page running  <code>eagl_secure()</code> will be redirected to the admin login page.</p>
-
-
 
 <?php eagl_formField("hola", "text", "Type your name"); ?>
 
 <?php eagl_formField("hola2", "text", "Type your name", "placeholder", "required"); ?>
-
-
-
-
-
-
-
 
 
 </article>

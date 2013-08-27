@@ -966,6 +966,8 @@ textarea {
   font-size: 1em; }
   textarea:focus {
     border-color: #2c90c6; }
+  textarea[disabled] {
+    color: #cccccc; }
 
 img {
   max-width: 100%;
@@ -1468,3 +1470,24 @@ nav[role="group"] {
       -webkit-column-count: 1;
       max-width: 37.5rem;
       margin: 0 auto; } }
+
+[data-modal] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2rem;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center; }
+  [data-modal] p {
+    text-align: center;
+    color: white; }
+  [data-modal] a {
+    text-decoration: none;
+    cursor: pointer; }
+  [data-modal] i {
+    color: #5bc8a4;
+    margin-top: 2rem;
+    display: block;
+    font-size: 30vw;
+    text-align: center; }

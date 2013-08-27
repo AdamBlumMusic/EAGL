@@ -36,8 +36,6 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 	}
 
 
-//	chmod($myFile, 0755);
-
 } else {
 
 }
@@ -56,67 +54,4 @@ if (isset($_POST['blogpost_content']) && isset($_POST['blogpost_title'])) {
 		<input type="hidden" required autocomplete="off" name="blogpost_date" id="blogpost_date" value="<?php echo $eagl_today; ?>" />
 		<input type="hidden" autocomplete="off" name="blogpost_dateNum" id="blogpost_dateNum" value="<?php echo $eagl_todayNum; ?>" />
 		<label for="blogpost_content">Static HTML</label>
-		<textarea name="blogpost_content" id="blogpost_content"></textarea>
-		<p role="note" rel="Info">Anything written in the Static HTML field is placed below the main content in the post. If you wish to write the post entirely in HTML, that can be done as well. Server-side code such as php cannot be included.</p>
-
-
-		<?php eagl_formField("blogpost_eagl_code", "text", "EAGL Code", "", "autocomplete='off'"); ?>
-
-		<ul role="note" rel="Eagl Codes">
-			<li><code>eagl_del</code> will delete the current post</li>
-		</ul>
-		
-		</form>
-
-
-<h4>Editor</h4>
-
-
-<?php eagl_wysiwyg("postnew", "ce01"); ?>
-</article>
-
-
-
-
-
-
-<script>
-	$("#ce01").keyup(function() {
-  //		$("#blogpost_content").val($("#ce01").html());
-	});
-
-	$("#submit").click(function() {
-		var content = $("#ce01").html();
-		var oldcontent = $("#blogpost_content").val();
-  		$("#blogpost_content").val(content + "\n" + oldcontent);
-	});
-</script>
-
-
-<script>
-$(function() {
-  $('#editControls a').click(function(e) {
-    switch($(this).data('role')) {
-      case 'h1':
-      case 'h2':
-      case 'h3':
-      case 'h4':
-      case 'h5':
-      case 'h6':
-      case 'pre':
-      case 'p':
-        document.execCommand('formatBlock', false, $(this).data('role'));
-        break;
-      default:
-        document.execCommand($(this).data('role'), false, null);
-        break;
-    }
-    return false;
-  });
-});
-</script>
-
-
-<?php include "includes/footer.php"; ?>
-</body>
-</html>
+		<textarea name="blogpost_content" id="blogpost_content">

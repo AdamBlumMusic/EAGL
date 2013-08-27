@@ -125,6 +125,10 @@ textarea {
 		// border-bottom:  0.125em solid $gray;
 		font-size:  1em;
 		@extend %bodyfont;
+
+		&[disabled] {
+			color:  $gray;
+		}
 }
 
 

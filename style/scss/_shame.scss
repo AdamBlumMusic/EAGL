@@ -357,7 +357,37 @@ a {
 
 
 
+[data-modal] {
+	position: fixed;
+	left:  0;
+	right:  0;
+	top: 2rem;
+	bottom:  0;
 
+	background:  rgba(0,0,0,0.6);
+
+	text-align:  center;
+
+
+	p {
+		text-align:  center;
+		color:  white;
+	}
+
+	a {
+		text-decoration:  none;
+		cursor:  pointer;
+	}
+
+	i {
+		color:  $green;
+		margin-top:  2rem;
+		display:  block;
+
+		font-size:  30vw;
+		text-align:  center;
+	}
+}
 
 
 
