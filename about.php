@@ -1,10 +1,4 @@
-<!--
-Adam Blum Official Website
--->
-<!doctype html>
-<html lang="en">
-<head>
-	<?php include "includes/head.php"; ?>
+<?php include "includes/head.php"; ?>
 	<title>Adam Blum</title>
 </head>
 <body>
@@ -12,10 +6,6 @@ Adam Blum Official Website
 <?php include "includes/legacy.php"; ?>
 
 <?php include "includes/navigation.php"; ?>
-
-
-
-
 
 <article>
 	<header>

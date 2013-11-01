@@ -7,17 +7,17 @@
 	<?php eagl_secure(); ?>
 
 
-	<article role="article">
+	<article>
 		<header>
-			<h1 data-icon="code"></h1>
+			<h1>File Editor</h1>
 		</header>
 	</article>
 
-	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone! It is probably more efficient if you do the majority of your editing locally, but if you need to make a quick fix, this </p>
+	<p>This is a directory of every file available on this site. Edit with caution, changes cannot be undone! It is probably more efficient if you do the majority of your editing locally, but if you need to make a quick fix, this will do the trick.</p>
 
 
-
-
+<h4>User Agent:</h4>
+<p><?php getUA(); ?></p>
 
 <p><?php echo $plugintest; ?> blah blah</p>
 
@@ -42,6 +42,7 @@
 
 
 <h3 data-c>All Files</h3>
+<p>Any filename without an extension is a folder; these cannot be edited.</p>
 <article data-file-cols>
 	<section>
 		<h5>Pages</h5>

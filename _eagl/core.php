@@ -1,9 +1,4 @@
 <?php
-/*
-  EAGL
-  Core
-*/
-
 include "_eagl/config.php"; // includes the config file
 
 $eagl_thispage = basename($_SERVER['PHP_SELF']); // global variable to return the current page name
@@ -314,14 +309,11 @@ function eagl_secure() {
 function eagl_loginSuccess() {
   $_SESSION['loggedIn'] = "true";
   $_SESSION['user'] = "$eagl_user";
- header( "Location: dashboard.php" );
+  echo "<a href='dashboard.php' role='link'>Click Here to Confirm</a>";
 }
 
 function eagl_loginFailure() {
   echo "You Suck!";
-  echo $userAttempt;
-  echo $passAttemptHashed;
-  echo $passAttemptNoHash;
 }
 
 
@@ -330,5 +322,39 @@ if ($eagl_scripts !== "" && $eagl_stylesheets !== "" && $eagl_legacystylesheet !
 } else {
   $eagl_productionReady = "false";
 }
+
+
+
+
+
+
+/*
+
+		ERROR LOGGING
+
+*/
+
+
+
+function shutdownFunction() { 
+    $error = error_get_last(); 
+    if ($error['type'] == 1) { 
+        echo "<section> <h5>Fatal Error</h5> <p>Oops.</p></section>";
+    } 
+}
+register_shutdown_function('shutdownFunction'); 
+
+
+
+$eagl_Webmaster = "Adam Blum";
+
+
+
+
+
+
+
+
+
 
 ?>

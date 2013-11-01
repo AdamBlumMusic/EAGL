@@ -5,13 +5,13 @@
 		** for css and js resources, remember to omit the file extension **
 	*/
 
-	$eagl_scripts = "jquery, highlight, fittext, modernizr, global";
+	$eagl_scripts = "jquery, highlight, modernizr, global";
 	$eagl_stylesheets = "global";
 	$eagl_legacystylesheet = "legacy";
 
 	$eagl_prefetches = "about.php, index.php";
 
-	$eagl_version = "1.0.2";
+	$eagl_version = "1.0.3";
 	$eagl_version_meta = "alpha";
 
 	$eagl_adminUsername = "admin";
@@ -36,5 +36,5 @@
 
 	$eagl_nostyles = "false";
 	$eagl_noscripts = "false"; // disabling javascript makes parts of the admin section unusable, use with caution!
-	$eagl_developerInfo = "true";
+	$eagl_developerInfo = "false";
 ?>																				

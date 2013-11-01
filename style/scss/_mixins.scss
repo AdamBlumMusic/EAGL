@@ -131,7 +131,7 @@
 }
 
 %bodyfont {
-	@include fenix;
+	@extend %sansbook;
 	-moz-font-feature-settings: "onum=1";
     -ms-font-feature-settings: "onum";
     -webkit-font-feature-settings: "onum";
@@ -141,7 +141,7 @@
 }
 
 %headingfont {
-	@include fenix;
+	@extend %sansbook;
 	color:  $headingcolor;
 }
 
